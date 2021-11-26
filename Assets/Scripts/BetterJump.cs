@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerJump : MonoBehaviour
+public class BetterJump : MonoBehaviour
 {
     [SerializeField] Rigidbody2D body;
     [SerializeField] float fallMultiplier = 2.5f;
     [SerializeField] float lowJumpMultiplier = 2f;
     bool isJumping = false;
     
-    public void OnJump(InputAction.CallbackContext context) => isJumping = context.performed;
+    public void OnJump(InputAction.CallbackContext context) => isJumping = !context.canceled;
 
     void Update()
     {
