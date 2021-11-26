@@ -31,9 +31,9 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         IDLE = Animator.StringToHash("Idle");
-        // RUN = Animator.StringToHash("Run");
-        // JUMP = Animator.StringToHash("Jump");
-        // FALL = Animator.StringToHash("Fall");
+        RUN = Animator.StringToHash("Run");
+        JUMP = Animator.StringToHash("Jump");
+        FALL = Animator.StringToHash("Fall");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
     }
@@ -44,14 +44,15 @@ public class Player : MonoBehaviour
         ApplySpriteRotation();
     }
 
-    void FixedUpdate() => body.AddForce(Vector2.right * (moveDirection.x * movementSpeed));
+    void FixedUpdate() => body.velocity = new Vector2(moveDirection.x * movementSpeed, body.velocity.y);
 
     public void OnMovement(InputAction.CallbackContext context) => moveDirection = context.ReadValue<Vector2>();
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed && IsGrounded())
-            body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        if (!context.performed || !IsGrounded()) return;
+        body.velocity = new Vector2(body.velocity.x, 0);
+        body.velocity += Vector2.up * jumpForce;
     }
 
     bool IsGrounded()
