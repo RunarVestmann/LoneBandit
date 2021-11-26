@@ -51,8 +51,9 @@ public class Player : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         if (!context.performed || !IsGrounded()) return;
-        body.velocity = new Vector2(body.velocity.x, 0);
-        body.velocity += Vector2.up * jumpForce;
+        // body.velocity = new Vector2(body.velocity.x, 0);
+        // body.velocity += Vector2.up * jumpForce;
+        body.AddForce(Vector2.up * jumpForce);
     }
 
     bool IsGrounded()
