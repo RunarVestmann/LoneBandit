@@ -131,8 +131,21 @@ public class Player : MonoBehaviour
         // Dash in the direction we are facing if there is no input
         if (dashDirection == Vector2.zero)
             dashDirection = transform.localScale.x * Vector2.right;
+        else
+        {
+            dashDirection.x = clampDirectionalInput(dashDirection.x);
+            dashDirection.y = clampDirectionalInput(dashDirection.y);
+            dashDirection.Normalize();
+        }
 
         StartCoroutine(Dash(dashDirection));
+    }
+
+    float clampDirectionalInput(float input)
+    {
+        if (input < -0.35f) return -1f;
+        if (input > 0.35f) return 1f;
+        return 0;
     }
 
     IEnumerator Dash(Vector2 direction)
