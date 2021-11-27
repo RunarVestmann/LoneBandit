@@ -1,9 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [Header("Events")] 
+    [SerializeField] UnityEvent dashEvent;
+    [SerializeField] UnityEvent jumpEvent;
+    [SerializeField] UnityEvent landEvent;
+
+    [Space]
+    
+    [Header("Movement")]
+
     [SerializeField] float movementSpeed;
     [SerializeField] float jumpForce;
 
@@ -51,6 +61,7 @@ public class Player : MonoBehaviour
     bool isWallJumping ;
     bool isDashing;
     bool hasDashed;
+    bool groundStatusLastFrame = true;
 
     int currentAnimationState;
 
@@ -106,6 +117,11 @@ public class Player : MonoBehaviour
 
         if (IsGrounded())
             hasDashed = false;
+
+        if (!groundStatusLastFrame && IsGrounded())
+            landEvent.Invoke();
+        
+        groundStatusLastFrame = IsGrounded();
     }
 
     public void OnMovement(InputAction.CallbackContext context) => moveDirection = context.ReadValue<Vector2>();
@@ -123,6 +139,7 @@ public class Player : MonoBehaviour
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
             FlipScale();
         }
+        jumpEvent.Invoke();
     }
 
     public void OnDash(InputAction.CallbackContext context)
@@ -142,6 +159,8 @@ public class Player : MonoBehaviour
             dashDirection.Normalize();
         }
 
+        dashEvent.Invoke();
+        
         StartCoroutine(Dash(dashDirection));
     }
 
