@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float horizontalWallJumpForce;
     [SerializeField] float verticalWallJumpForce;
     [SerializeField] float wallJumpTime;
+    [SerializeField] float wallSlideVerticalVelocity;
     float wallJumpElapsedTime = 0f;
 
     [SerializeField] Collider2D belowCollider;
@@ -56,14 +57,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        // if (IsGrounded())
-        // {
-        //     isWallJumping = false;
-        // }
-
         if (isWallJumping)
         {
-            // Debug.Log(wallJumpElapsedTime);
             wallJumpElapsedTime += Time.deltaTime;
             if (!(wallJumpElapsedTime >= wallJumpTime)) return;
             isWallJumping = false;
@@ -71,6 +66,12 @@ public class Player : MonoBehaviour
         }
         else
             body.velocity = new Vector2(moveDirection.x * movementSpeed, body.velocity.y);
+
+        if (IsWallInFront() && Mathf.Abs(moveDirection.x) > 0f)
+        {
+            // TODO: add wall slide animation
+            body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
+        }
     }
 
     public void OnMovement(InputAction.CallbackContext context) => moveDirection = context.ReadValue<Vector2>();
