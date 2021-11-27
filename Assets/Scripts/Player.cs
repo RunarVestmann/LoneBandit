@@ -98,6 +98,10 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         if (isDashing) return;
+
+        var direction = moveDirection;
+        direction.y = 0f;
+        direction.Normalize();
         
         if (isWallJumping)
         {
@@ -107,9 +111,9 @@ public class Player : MonoBehaviour
             elapsedWallJumpTime = 0f;
         }
         else
-            body.velocity = new Vector2(moveDirection.x * movementSpeed, body.velocity.y);
+            body.velocity = new Vector2(direction.x * movementSpeed, body.velocity.y);
 
-        if (IsWallInFront() && Mathf.Abs(moveDirection.x) > 0f)
+        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f)
         {
             // TODO: add wall slide animation
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
@@ -154,8 +158,8 @@ public class Player : MonoBehaviour
             dashDirection = transform.localScale.x * Vector2.right;
         else
         {
-            dashDirection.x = clampDirectionalInput(dashDirection.x);
-            dashDirection.y = clampDirectionalInput(dashDirection.y);
+            dashDirection.x = ClampDirectionalInput(dashDirection.x);
+            dashDirection.y = ClampDirectionalInput(dashDirection.y);
             dashDirection.Normalize();
         }
 
@@ -164,7 +168,7 @@ public class Player : MonoBehaviour
         StartCoroutine(Dash(dashDirection));
     }
 
-    float clampDirectionalInput(float input)
+    float ClampDirectionalInput(float input)
     {
         if (input < -0.35f) return -1f;
         if (input > 0.35f) return 1f;
