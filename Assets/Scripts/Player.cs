@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     // bool isAttacking;
     bool isWallJumping ;
     bool isDashing;
+    bool hasDashed;
 
     int currentAnimationState;
 
@@ -102,6 +103,9 @@ public class Player : MonoBehaviour
             // TODO: add wall slide animation
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
         }
+
+        if (IsGrounded())
+            hasDashed = false;
     }
 
     public void OnMovement(InputAction.CallbackContext context) => moveDirection = context.ReadValue<Vector2>();
@@ -123,7 +127,7 @@ public class Player : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (!context.started || isDashing) return;
+        if (!context.started || isDashing || hasDashed) return;
         var dashDirection = moveDirection;
         
         // TODO: clamp direction into 45 degree angle intervals
@@ -152,6 +156,7 @@ public class Player : MonoBehaviour
     {
         betterJump.enabled = false;
         isDashing = true;
+        hasDashed = true;
         body.velocity = direction * dashForce;
         body.gravityScale = 0f;
 
