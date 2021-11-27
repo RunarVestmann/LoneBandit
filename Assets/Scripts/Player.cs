@@ -87,7 +87,16 @@ public class Player : MonoBehaviour
             body.velocity = Vector2.zero;
             body.AddForce(Vector2.up * verticalWallJumpForce);
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
+            FlipScale();
         }
+    }
+
+    void FlipScale()
+    {
+        var localScale = transform.localScale;
+        localScale.x = -localScale.x;
+        facingRight = !facingRight;
+        transform.localScale = localScale;
     }
 
     bool IsGrounded() => belowCollider.IsTouchingLayers(groundLayer);
@@ -110,6 +119,7 @@ public class Player : MonoBehaviour
 
     void ApplySpriteRotation()
     {
+        if (isWallJumping) return;
         var localScale = transform.localScale;
         if (moveDirection.x < 0f && facingRight)
         {
