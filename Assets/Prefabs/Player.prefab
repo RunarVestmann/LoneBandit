@@ -219,7 +219,19 @@ MonoBehaviour:
     m_ActionId: e178b553-7072-4a95-97cd-a613c6ac413d
     m_ActionName: Player/Attack[/Mouse/leftButton,/Keyboard/x]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6094150044013158601}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a621d08c-060a-4bd8-8526-e89e318388b0
     m_ActionName: Player/Dash[/Keyboard/c,/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
@@ -432,6 +444,8 @@ MonoBehaviour:
   verticalWallJumpForce: 960
   wallJumpTime: 0.1
   wallSlideVerticalVelocity: -1
+  dashForce: 15
+  dashTime: 0.15
   belowCollider: {fileID: 6094150043091399628}
   frontCollider: {fileID: 6094150042939392006}
   groundLayer:

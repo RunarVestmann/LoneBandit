@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,18 +6,40 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float movementSpeed;
     [SerializeField] float jumpForce;
+
+    [Header("Wall Jump")]
     [SerializeField] float horizontalWallJumpForce;
     [SerializeField] float verticalWallJumpForce;
     [SerializeField] float wallJumpTime;
-    [SerializeField] float wallSlideVerticalVelocity;
-    float wallJumpElapsedTime = 0f;
+    float elapsedWallJumpTime;
 
+    [Space]
+    
+    [Header("Wall Slide")] [SerializeField]
+    float wallSlideVerticalVelocity;
+
+    [Space] 
+    
+    [Header("Dash")] 
+    [SerializeField] float dashForce;
+    [SerializeField] float dashTime;
+    float elapsedDashTime;
+
+    [Space] 
+    [Header("Colliders")] 
     [SerializeField] Collider2D belowCollider;
+
     [SerializeField] Collider2D frontCollider;
 
+    [Space] 
+    
+    [Header("Layers")] 
     [SerializeField] LayerMask groundLayer;
+
     [SerializeField] LayerMask wallLayer;
 
+    BetterJump betterJump;
+    
     Rigidbody2D body;
     Vector2 moveDirection;
 
@@ -24,8 +47,9 @@ public class Player : MonoBehaviour
 
     bool facingRight = true;
 
-    // bool isAttacking = false;
-    bool isWallJumping = false;
+    // bool isAttacking;
+    bool isWallJumping ;
+    bool isDashing;
 
     int currentAnimationState;
 
@@ -37,8 +61,11 @@ public class Player : MonoBehaviour
     int FALL;
     // int ATTACK;
 
+    float defaultGravityScale;
+
     void Awake()
     {
+        betterJump = GetComponent<BetterJump>();
         animator = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         IDLE = Animator.StringToHash("Idle");
@@ -47,6 +74,7 @@ public class Player : MonoBehaviour
         FALL = Animator.StringToHash("Fall");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
+        defaultGravityScale = body.gravityScale;
     }
 
     void Update()
@@ -57,12 +85,14 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDashing) return;
+        
         if (isWallJumping)
         {
-            wallJumpElapsedTime += Time.deltaTime;
-            if (!(wallJumpElapsedTime >= wallJumpTime)) return;
+            elapsedWallJumpTime += Time.deltaTime;
+            if (!(elapsedWallJumpTime >= wallJumpTime)) return;
             isWallJumping = false;
-            wallJumpElapsedTime = 0f;
+            elapsedWallJumpTime = 0f;
         }
         else
             body.velocity = new Vector2(moveDirection.x * movementSpeed, body.velocity.y);
@@ -89,6 +119,35 @@ public class Player : MonoBehaviour
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
             FlipScale();
         }
+    }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        if (!context.started || isDashing) return;
+        var dashDirection = moveDirection;
+        
+        // TODO: clamp direction into 45 degree angle intervals
+        
+        // Dash in the direction we are facing if there is no input
+        if (dashDirection == Vector2.zero)
+            dashDirection = transform.localScale.x * Vector2.right;
+
+        StartCoroutine(Dash(dashDirection));
+    }
+
+    IEnumerator Dash(Vector2 direction)
+    {
+        betterJump.enabled = false;
+        isDashing = true;
+        body.velocity = direction * dashForce;
+        body.gravityScale = 0f;
+
+        yield return new WaitForSeconds(dashTime);
+        
+        isDashing = false;
+        body.velocity = Vector2.zero;
+        body.gravityScale = defaultGravityScale;
+        betterJump.enabled = true;
     }
 
     void FlipScale()
