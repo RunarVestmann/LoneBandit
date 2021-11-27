@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
     Animator animator;
 
     bool facingRight = true;
+    bool isWallSliding = false;
 
     // bool isAttacking;
     bool isWallJumping ;
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour
 
     int FALL;
     // int ATTACK;
+    int WALLSLIDE;
 
     float defaultGravityScale;
 
@@ -84,6 +86,7 @@ public class Player : MonoBehaviour
         RUN = Animator.StringToHash("Run");
         JUMP = Animator.StringToHash("Jump");
         FALL = Animator.StringToHash("Fall");
+        WALLSLIDE = Animator.StringToHash("WallSlide");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
@@ -116,8 +119,12 @@ public class Player : MonoBehaviour
         if (IsWallInFront() && Mathf.Abs(direction.x) > 0f)
         {
             // TODO: add wall slide animation
+            isWallSliding = true;
+            SetAnimationState(WALLSLIDE);
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
         }
+        else
+            isWallSliding = false;
 
         if (IsGrounded())
             hasDashed = false;
@@ -210,11 +217,14 @@ public class Player : MonoBehaviour
         //     SetAnimationState(ATTACK);
         //     return;
         // }
+        if(!isWallSliding)
+        {
+            if (IsGrounded())
+                SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
+            else
+                SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
 
-        if (IsGrounded())
-            SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
-        else
-            SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
+        }
     }
 
     void ApplySpriteRotation()
