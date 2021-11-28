@@ -179,6 +179,12 @@ public class Player : MonoBehaviour
         StartCoroutine(Dash(dashDirection));
     }
 
+    public void ReplenishMovement()
+    {
+        hasDashed = false;
+        hasJumped = false;
+    }
+
     float ClampDirectionalInput(float input)
     {
         if (input < -0.35f) return -1f;
