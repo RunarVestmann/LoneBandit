@@ -1,0 +1,5160 @@
+fileFormatVersion: 2
+guid: c4fb6fbdbc41b3045b0e646931396dae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4020869233459136810
+    second: DirtBrick_Assets_V5_0
+  - first:
+      213: 4270563897102760314
+    second: DirtBrick_Assets_V5_1
+  - first:
+      213: -5411328823880253497
+    second: DirtBrick_Assets_V5_2
+  - first:
+      213: 1046574588616840807
+    second: DirtBrick_Assets_V5_3
+  - first:
+      213: 9154869190481178435
+    second: DirtBrick_Assets_V5_4
+  - first:
+      213: -261250200528929600
+    second: DirtBrick_Assets_V5_5
+  - first:
+      213: 4938632238872538188
+    second: DirtBrick_Assets_V5_6
+  - first:
+      213: -8033487948173457331
+    second: DirtBrick_Assets_V5_7
+  - first:
+      213: -4737860832718369198
+    second: DirtBrick_Assets_V5_8
+  - first:
+      213: 4773895675476106948
+    second: DirtBrick_Assets_V5_9
+  - first:
+      213: -3101621929406886559
+    second: DirtBrick_Assets_V5_10
+  - first:
+      213: 1747991989163825155
+    second: DirtBrick_Assets_V5_11
+  - first:
+      213: 4388899972336076016
+    second: DirtBrick_Assets_V5_12
+  - first:
+      213: 7971101531035776686
+    second: DirtBrick_Assets_V5_13
+  - first:
+      213: -1781573103743958994
+    second: DirtBrick_Assets_V5_14
+  - first:
+      213: 6003340046511363102
+    second: DirtBrick_Assets_V5_15
+  - first:
+      213: 8419160914098368156
+    second: DirtBrick_Assets_V5_16
+  - first:
+      213: 1863691061978737217
+    second: DirtBrick_Assets_V5_17
+  - first:
+      213: 7156534068040397321
+    second: DirtBrick_Assets_V5_18
+  - first:
+      213: 4802483344171843052
+    second: DirtBrick_Assets_V5_19
+  - first:
+      213: -6452940382480030928
+    second: DirtBrick_Assets_V5_20
+  - first:
+      213: -2365726703701942086
+    second: DirtBrick_Assets_V5_21
+  - first:
+      213: 2111697083069187292
+    second: DirtBrick_Assets_V5_22
+  - first:
+      213: 1910372299253957741
+    second: DirtBrick_Assets_V5_23
+  - first:
+      213: 5126528207148196500
+    second: DirtBrick_Assets_V5_24
+  - first:
+      213: 2777351719349045564
+    second: DirtBrick_Assets_V5_25
+  - first:
+      213: 8219213256556840375
+    second: DirtBrick_Assets_V5_26
+  - first:
+      213: 685446633059218107
+    second: DirtBrick_Assets_V5_27
+  - first:
+      213: 6408809828987784911
+    second: DirtBrick_Assets_V5_28
+  - first:
+      213: 1307406172324681028
+    second: DirtBrick_Assets_V5_29
+  - first:
+      213: -3794216790960291140
+    second: DirtBrick_Assets_V5_30
+  - first:
+      213: -2299998766305511785
+    second: DirtBrick_Assets_V5_31
+  - first:
+      213: -462610791969577229
+    second: DirtBrick_Assets_V5_32
+  - first:
+      213: 1372463091218314768
+    second: DirtBrick_Assets_V5_33
+  - first:
+      213: 7422743553173621241
+    second: DirtBrick_Assets_V5_34
+  - first:
+      213: -5781108025728179371
+    second: DirtBrick_Assets_V5_35
+  - first:
+      213: -2178151879102280264
+    second: DirtBrick_Assets_V5_36
+  - first:
+      213: 7444648228344538258
+    second: DirtBrick_Assets_V5_37
+  - first:
+      213: -3118997978920823750
+    second: DirtBrick_Assets_V5_38
+  - first:
+      213: -1260451261893807371
+    second: DirtBrick_Assets_V5_39
+  - first:
+      213: -6502587451869280325
+    second: DirtBrick_Assets_V5_40
+  - first:
+      213: -566227142052890378
+    second: DirtBrick_Assets_V5_41
+  - first:
+      213: -4059584093186365340
+    second: DirtBrick_Assets_V5_42
+  - first:
+      213: 1261193968593472009
+    second: DirtBrick_Assets_V5_43
+  - first:
+      213: -2230165074275550518
+    second: DirtBrick_Assets_V5_44
+  - first:
+      213: 6780452366215111685
+    second: DirtBrick_Assets_V5_45
+  - first:
+      213: 3185166314045979709
+    second: DirtBrick_Assets_V5_46
+  - first:
+      213: -3820982494604320802
+    second: DirtBrick_Assets_V5_47
+  - first:
+      213: -7941025836678718482
+    second: DirtBrick_Assets_V5_48
+  - first:
+      213: 3756612485346517886
+    second: DirtBrick_Assets_V5_49
+  - first:
+      213: -2986177639621077238
+    second: DirtBrick_Assets_V5_50
+  - first:
+      213: -8398843496846143142
+    second: DirtBrick_Assets_V5_51
+  - first:
+      213: 1236825579921510419
+    second: DirtBrick_Assets_V5_52
+  - first:
+      213: -6626745185311674274
+    second: DirtBrick_Assets_V5_53
+  - first:
+      213: -5682160647344066329
+    second: DirtBrick_Assets_V5_54
+  - first:
+      213: -7875183669569646651
+    second: DirtBrick_Assets_V5_55
+  - first:
+      213: 2061668882954420985
+    second: DirtBrick_Assets_V5_56
+  - first:
+      213: -7008284786671568001
+    second: DirtBrick_Assets_V5_57
+  - first:
+      213: -6166898158534946709
+    second: DirtBrick_Assets_V5_58
+  - first:
+      213: 6195471991627762026
+    second: DirtBrick_Assets_V5_59
+  - first:
+      213: -6067721190365953351
+    second: DirtBrick_Assets_V5_60
+  - first:
+      213: -4719856252192958771
+    second: DirtBrick_Assets_V5_61
+  - first:
+      213: 5135759805458811441
+    second: DirtBrick_Assets_V5_62
+  - first:
+      213: 6854378161265387817
+    second: DirtBrick_Assets_V5_63
+  - first:
+      213: -5188373351399610395
+    second: DirtBrick_Assets_V5_64
+  - first:
+      213: -8154662309617477077
+    second: DirtBrick_Assets_V5_65
+  - first:
+      213: -6383679367938748240
+    second: DirtBrick_Assets_V5_66
+  - first:
+      213: -3115906084727320982
+    second: DirtBrick_Assets_V5_67
+  - first:
+      213: 2444269761265766781
+    second: DirtBrick_Assets_V5_68
+  - first:
+      213: -9094088551058228561
+    second: DirtBrick_Assets_V5_69
+  - first:
+      213: 2402718399602569011
+    second: DirtBrick_Assets_V5_70
+  - first:
+      213: -5265269348902992847
+    second: DirtBrick_Assets_V5_71
+  - first:
+      213: -1994797001836833467
+    second: DirtBrick_Assets_V5_72
+  - first:
+      213: 1078366111524658876
+    second: DirtBrick_Assets_V5_73
+  - first:
+      213: -6402797569422262309
+    second: DirtBrick_Assets_V5_74
+  - first:
+      213: 7714257616275402953
+    second: DirtBrick_Assets_V5_75
+  - first:
+      213: -7568683034631374066
+    second: DirtBrick_Assets_V5_76
+  - first:
+      213: 5071722947513882611
+    second: DirtBrick_Assets_V5_77
+  - first:
+      213: -1245296153546046854
+    second: DirtBrick_Assets_V5_78
+  - first:
+      213: 4427747534344033863
+    second: DirtBrick_Assets_V5_79
+  - first:
+      213: 3991194929672047028
+    second: DirtBrick_Assets_V5_80
+  - first:
+      213: 5801736368787463646
+    second: DirtBrick_Assets_V5_81
+  - first:
+      213: -5295937863209261025
+    second: DirtBrick_Assets_V5_82
+  - first:
+      213: 7461438894374258071
+    second: DirtBrick_Assets_V5_83
+  - first:
+      213: -3406613048779118467
+    second: DirtBrick_Assets_V5_84
+  - first:
+      213: -3362188204469680499
+    second: DirtBrick_Assets_V5_85
+  - first:
+      213: -1119345519391765262
+    second: DirtBrick_Assets_V5_86
+  - first:
+      213: 8857952209128735876
+    second: DirtBrick_Assets_V5_87
+  - first:
+      213: -6875976180139958489
+    second: DirtBrick_Assets_V5_88
+  - first:
+      213: -8268357727141549884
+    second: DirtBrick_Assets_V5_89
+  - first:
+      213: 4204827384956365797
+    second: DirtBrick_Assets_V5_90
+  - first:
+      213: 7845720813989020930
+    second: DirtBrick_Assets_V5_91
+  - first:
+      213: -2163149474553162629
+    second: DirtBrick_Assets_V5_92
+  - first:
+      213: 6349313512521561097
+    second: DirtBrick_Assets_V5_93
+  - first:
+      213: -6967717425653173599
+    second: DirtBrick_Assets_V5_94
+  - first:
+      213: 6915663039859339191
+    second: DirtBrick_Assets_V5_95
+  - first:
+      213: 3827669587766288509
+    second: DirtBrick_Assets_V5_96
+  - first:
+      213: -1536790386173826632
+    second: DirtBrick_Assets_V5_97
+  - first:
+      213: -4380759202130594662
+    second: DirtBrick_Assets_V5_98
+  - first:
+      213: -1258307436157885734
+    second: DirtBrick_Assets_V5_99
+  - first:
+      213: 9022221611857665006
+    second: DirtBrick_Assets_V5_100
+  - first:
+      213: -2589016384171046472
+    second: DirtBrick_Assets_V5_101
+  - first:
+      213: -7736245126979389216
+    second: DirtBrick_Assets_V5_102
+  - first:
+      213: 4356169269474133210
+    second: DirtBrick_Assets_V5_103
+  - first:
+      213: -1010332177216187468
+    second: DirtBrick_Assets_V5_104
+  - first:
+      213: 2064588661510487121
+    second: DirtBrick_Assets_V5_105
+  - first:
+      213: 6630337114342265231
+    second: DirtBrick_Assets_V5_106
+  - first:
+      213: 7454312664259768957
+    second: DirtBrick_Assets_V5_107
+  - first:
+      213: 2188584402713754796
+    second: DirtBrick_Assets_V5_108
+  - first:
+      213: 359531968447364550
+    second: DirtBrick_Assets_V5_109
+  - first:
+      213: -1349620611683880122
+    second: DirtBrick_Assets_V5_110
+  - first:
+      213: -6211909709110449568
+    second: DirtBrick_Assets_V5_111
+  - first:
+      213: 1608685400384545325
+    second: DirtBrick_Assets_V5_112
+  - first:
+      213: 923688824856180940
+    second: DirtBrick_Assets_V5_113
+  - first:
+      213: -1763696980281677225
+    second: DirtBrick_Assets_V5_114
+  - first:
+      213: -2985015871043570491
+    second: DirtBrick_Assets_V5_115
+  - first:
+      213: -359632431359884120
+    second: DirtBrick_Assets_V5_116
+  - first:
+      213: -5931631611475284140
+    second: DirtBrick_Assets_V5_117
+  - first:
+      213: -7418504893152908100
+    second: DirtBrick_Assets_V5_118
+  - first:
+      213: 295415679101820815
+    second: DirtBrick_Assets_V5_119
+  - first:
+      213: 1569990048342141523
+    second: DirtBrick_Assets_V5_120
+  - first:
+      213: -547226274404295025
+    second: DirtBrick_Assets_V5_121
+  - first:
+      213: 8410957580102015548
+    second: DirtBrick_Assets_V5_122
+  - first:
+      213: -3959230971631480000
+    second: DirtBrick_Assets_V5_123
+  - first:
+      213: -7815758167189192425
+    second: DirtBrick_Assets_V5_124
+  - first:
+      213: 6979331126650590526
+    second: DirtBrick_Assets_V5_125
+  - first:
+      213: 7456632524571961981
+    second: DirtBrick_Assets_V5_126
+  - first:
+      213: 6053494918645460131
+    second: DirtBrick_Assets_V5_127
+  - first:
+      213: 5490588300395959365
+    second: DirtBrick_Assets_V5_128
+  - first:
+      213: 7441228278083085384
+    second: DirtBrick_Assets_V5_129
+  - first:
+      213: 5346132484879346007
+    second: DirtBrick_Assets_V5_130
+  - first:
+      213: 9137523864507059042
+    second: DirtBrick_Assets_V5_131
+  - first:
+      213: 4631053416685239168
+    second: DirtBrick_Assets_V5_132
+  - first:
+      213: -1300550491428838768
+    second: DirtBrick_Assets_V5_133
+  - first:
+      213: 12496602993778438
+    second: DirtBrick_Assets_V5_134
+  - first:
+      213: -3102825694008803689
+    second: DirtBrick_Assets_V5_135
+  - first:
+      213: -8183880150501875751
+    second: DirtBrick_Assets_V5_136
+  - first:
+      213: 5845005033521334959
+    second: DirtBrick_Assets_V5_137
+  - first:
+      213: 8885085133786876706
+    second: DirtBrick_Assets_V5_138
+  - first:
+      213: -7127751241493595212
+    second: DirtBrick_Assets_V5_139
+  - first:
+      213: -1630343652523152597
+    second: DirtBrick_Assets_V5_140
+  - first:
+      213: 9142037173026259431
+    second: DirtBrick_Assets_V5_141
+  - first:
+      213: 3818184038594882606
+    second: DirtBrick_Assets_V5_142
+  - first:
+      213: -1957625756373850011
+    second: DirtBrick_Assets_V5_143
+  - first:
+      213: 2888377489089836522
+    second: DirtBrick_Assets_V5_144
+  - first:
+      213: 5682563246578657317
+    second: DirtBrick_Assets_V5_145
+  - first:
+      213: 9039115424880420555
+    second: DirtBrick_Assets_V5_146
+  - first:
+      213: -6524763328197402630
+    second: DirtBrick_Assets_V5_147
+  - first:
+      213: 3829169398520894087
+    second: DirtBrick_Assets_V5_148
+  - first:
+      213: 8554417745447891502
+    second: DirtBrick_Assets_V5_149
+  - first:
+      213: 2574522876878012880
+    second: DirtBrick_Assets_V5_150
+  - first:
+      213: -480743511172683141
+    second: DirtBrick_Assets_V5_151
+  - first:
+      213: 1345604032744109585
+    second: DirtBrick_Assets_V5_152
+  - first:
+      213: -5874522946384759917
+    second: DirtBrick_Assets_V5_153
+  - first:
+      213: 9082295122429748359
+    second: DirtBrick_Assets_V5_154
+  - first:
+      213: -5361376108656321005
+    second: DirtBrick_Assets_V5_155
+  - first:
+      213: 3280283815797829190
+    second: DirtBrick_Assets_V5_156
+  - first:
+      213: 6574147421234533710
+    second: DirtBrick_Assets_V5_157
+  - first:
+      213: -2979655320917745687
+    second: DirtBrick_Assets_V5_158
+  - first:
+      213: 8402493913300920424
+    second: DirtBrick_Assets_V5_159
+  - first:
+      213: -1047421522950238858
+    second: DirtBrick_Assets_V5_160
+  - first:
+      213: 2567340096922468780
+    second: DirtBrick_Assets_V5_161
+  - first:
+      213: 4081688715454199519
+    second: DirtBrick_Assets_V5_162
+  - first:
+      213: -7530631554327940795
+    second: DirtBrick_Assets_V5_163
+  - first:
+      213: -5104541959371689046
+    second: DirtBrick_Assets_V5_164
+  - first:
+      213: 3863803984263204582
+    second: DirtBrick_Assets_V5_165
+  - first:
+      213: -916050435339787005
+    second: DirtBrick_Assets_V5_166
+  - first:
+      213: 7738576647314100481
+    second: DirtBrick_Assets_V5_167
+  - first:
+      213: -37578024113625904
+    second: DirtBrick_Assets_V5_168
+  - first:
+      213: -6649948999630058708
+    second: DirtBrick_Assets_V5_169
+  - first:
+      213: 3618489528838171562
+    second: DirtBrick_Assets_V5_170
+  - first:
+      213: 1431065522940772250
+    second: DirtBrick_Assets_V5_171
+  - first:
+      213: -614018929497133130
+    second: DirtBrick_Assets_V5_172
+  - first:
+      213: -7786584120722029424
+    second: DirtBrick_Assets_V5_173
+  - first:
+      213: -7832132269784902020
+    second: DirtBrick_Assets_V5_174
+  - first:
+      213: 621888896047144242
+    second: DirtBrick_Assets_V5_175
+  - first:
+      213: 5476977815893055030
+    second: DirtBrick_Assets_V5_176
+  - first:
+      213: 487627677840071962
+    second: DirtBrick_Assets_V5_177
+  - first:
+      213: -5135087683376074047
+    second: DirtBrick_Assets_V5_178
+  - first:
+      213: 396964876390984184
+    second: DirtBrick_Assets_V5_179
+  - first:
+      213: 2266042495313412871
+    second: DirtBrick_Assets_V5_180
+  - first:
+      213: 5278286954614778908
+    second: DirtBrick_Assets_V5_181
+  - first:
+      213: 4382752182449107858
+    second: DirtBrick_Assets_V5_182
+  - first:
+      213: 6207252039840113841
+    second: DirtBrick_Assets_V5_183
+  - first:
+      213: 5307428688952543454
+    second: DirtBrick_Assets_V5_184
+  - first:
+      213: 7254959857664917213
+    second: DirtBrick_Assets_V5_185
+  - first:
+      213: -8978127157112419228
+    second: DirtBrick_Assets_V5_186
+  - first:
+      213: 3843202239842812709
+    second: DirtBrick_Assets_V5_187
+  - first:
+      213: -2593249399764623177
+    second: DirtBrick_Assets_V5_188
+  - first:
+      213: -4983294866239225885
+    second: DirtBrick_Assets_V5_189
+  - first:
+      213: -8641434006938440029
+    second: DirtBrick_Assets_V5_190
+  - first:
+      213: 7596562651368724429
+    second: DirtBrick_Assets_V5_191
+  - first:
+      213: 7903279676082541280
+    second: DirtBrick_Assets_V5_192
+  - first:
+      213: -1799989634249180735
+    second: DirtBrick_Assets_V5_193
+  - first:
+      213: 7179287549521556955
+    second: DirtBrick_Assets_V5_194
+  - first:
+      213: -5993199631899685599
+    second: DirtBrick_Assets_V5_195
+  - first:
+      213: 8002116532729295
+    second: DirtBrick_Assets_V5_196
+  - first:
+      213: 233676061259581509
+    second: DirtBrick_Assets_V5_197
+  - first:
+      213: -5083519528902271268
+    second: DirtBrick_Assets_V5_198
+  - first:
+      213: 7307299893040226784
+    second: DirtBrick_Assets_V5_199
+  - first:
+      213: -2964575043588499998
+    second: DirtBrick_Assets_V5_200
+  - first:
+      213: 6826529116797487160
+    second: DirtBrick_Assets_V5_201
+  - first:
+      213: -1264079569732883295
+    second: DirtBrick_Assets_V5_202
+  - first:
+      213: -7035474631159119789
+    second: DirtBrick_Assets_V5_203
+  - first:
+      213: 5696019695733663585
+    second: DirtBrick_Assets_V5_204
+  - first:
+      213: -3766152704704381697
+    second: DirtBrick_Assets_V5_205
+  - first:
+      213: 2781748624454369640
+    second: DirtBrick_Assets_V5_206
+  - first:
+      213: -4772985394777967437
+    second: DirtBrick_Assets_V5_207
+  - first:
+      213: 6521644267494012151
+    second: DirtBrick_Assets_V5_208
+  - first:
+      213: 1884110001773767670
+    second: DirtBrick_Assets_V5_209
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6fe535cb00338c0800000000000000
+      internalID: -4020869233459136810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79fa6dec37144b30800000000000000
+      internalID: 4270563897102760314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cff8c9ea1917e4b0800000000000000
+      internalID: -5411328823880253497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76615791b0e268e00800000000000000
+      internalID: 1046574588616840807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f6ccf2601ac0f70800000000000000
+      internalID: 9154869190481178435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc39f7a35adf5cf0800000000000000
+      internalID: -261250200528929600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c2a42fadb898440800000000000000
+      internalID: 4938632238872538188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d484dbd3641538090800000000000000
+      internalID: -8033487948173457331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ec596ccacbf3eb0800000000000000
+      internalID: -4737860832718369198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ced68bd2d8404240800000000000000
+      internalID: 4773895675476106948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d042ec943d4f4d0800000000000000
+      internalID: -3101621929406886559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3089650f37d124810800000000000000
+      internalID: 1747991989163825155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f440dd754188ec30800000000000000
+      internalID: 4388899972336076016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6b5f91c9a0f9e60800000000000000
+      internalID: 7971101531035776686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2083f983b49647e0800000000000000
+      internalID: -1781573103743958994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14df2a17f5205350800000000000000
+      internalID: 6003340046511363102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eafa7ae3ed6d470800000000000000
+      internalID: 8419160914098368156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a205885292dd910800000000000000
+      internalID: 1863691061978737217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902778461dd115360800000000000000
+      internalID: 7156534068040397321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedb7192829d5a240800000000000000
+      internalID: 4802483344171843052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033218949ec8276a0800000000000000
+      internalID: -6452940382480030928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0a03ed8104b2fd0800000000000000
+      internalID: -2365726703701942086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4419d0f414e4d10800000000000000
+      internalID: 2111697083069187292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6447cd0c71038a10800000000000000
+      internalID: 1910372299253957741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_24
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492a61e2e36152740800000000000000
+      internalID: 5126528207148196500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39ce187ca22b8620800000000000000
+      internalID: 2777351719349045564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5804ad8e2801270800000000000000
+      internalID: 8219213256556840375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb27bf3c412338900800000000000000
+      internalID: 685446633059218107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce49d9859aa0f850800000000000000
+      internalID: 6408809828987784911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445d09e9cf6d42210800000000000000
+      internalID: 1307406172324681028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb24df56eeb385bc0800000000000000
+      internalID: -3794216790960291140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796f586de43c410e0800000000000000
+      internalID: -2299998766305511785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6246b8fe97499f0800000000000000
+      internalID: -462610791969577229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016f66be8e7fb0310800000000000000
+      internalID: 1372463091218314768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_34
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f90cb92fe1e20760800000000000000
+      internalID: 7422743553173621241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553ef4651e065cfa0800000000000000
+      internalID: -5781108025728179371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd42430866a5c1e0800000000000000
+      internalID: -2178151879102280264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294a738ce14b05760800000000000000
+      internalID: 7444648228344538258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3453430dd717b4d0800000000000000
+      internalID: -3118997978920823750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f27026614af18ee0800000000000000
+      internalID: -1260451261893807371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb74b6a2a2b22c5a0800000000000000
+      internalID: -6502587451869280325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8b0cf0a6b5428f0800000000000000
+      internalID: -566227142052890378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468eccd96c579a7c0800000000000000
+      internalID: -4059584093186365340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a01ea7b39a08110800000000000000
+      internalID: 1261193968593472009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acab25d4eacdc01e0800000000000000
+      internalID: -2230165074275550518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50465b0b081091e50800000000000000
+      internalID: 6780452366215111685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c304b03ebf33c20800000000000000
+      internalID: 3185166314045979709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf9f146aa429fac0800000000000000
+      internalID: -3820982494604320802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebd09c231fcbc190800000000000000
+      internalID: -7941025836678718482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_49
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7360ebe62b222430800000000000000
+      internalID: 3756612485346517886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07db2a1247fe86d0800000000000000
+      internalID: -2986177639621077238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51d26ea650517b80800000000000000
+      internalID: -8398843496846143142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310965cdf461a2110800000000000000
+      internalID: 1236825579921510419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_53
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50b77c2d521904a0800000000000000
+      internalID: -6626745185311674274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e07a522ff8e421b0800000000000000
+      internalID: -5682160647344066329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf08525d2ab5b290800000000000000
+      internalID: -7875183669569646651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f289f40de48c9c10800000000000000
+      internalID: 2061668882954420985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bbaa53e129dbe90800000000000000
+      internalID: -7008284786671568001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6093866cc6ca6aa0800000000000000
+      internalID: -6166898158534946709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_59
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69cadc83fcbaf550800000000000000
+      internalID: 6195471991627762026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2802cb9bf1bcba0800000000000000
+      internalID: -6067721190365953351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_61
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6d129deb3bf7eb0800000000000000
+      internalID: -4719856252192958771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a0a182552e54740800000000000000
+      internalID: 5135759805458811441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9292b622f94af1f50800000000000000
+      internalID: 6854378161265387817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e729b31de13ff7b0800000000000000
+      internalID: -5188373351399610395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_65
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2adbfba5d1d4de80800000000000000
+      internalID: -8154662309617477077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b05502ef6d9867a0800000000000000
+      internalID: -6383679367938748240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_67
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e895abce312c4d0800000000000000
+      internalID: -3115906084727320982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_68
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d719977c56acbe120800000000000000
+      internalID: 2444269761265766781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa3a3635ae4bc180800000000000000
+      internalID: -9094088551058228561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f2b9f77ab285120800000000000000
+      internalID: 2402718399602569011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_71
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13482eb7c610ee6b0800000000000000
+      internalID: -5265269348902992847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545508a12be0154e0800000000000000
+      internalID: -1994797001836833467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe1f37d34027fe00800000000000000
+      internalID: 1078366111524658876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_74
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdff9d9b881b427a0800000000000000
+      internalID: -6402797569422262309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c072fb1e6c8e0b60800000000000000
+      internalID: 7714257616275402953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b754f61e2a6f690800000000000000
+      internalID: -7568683034631374066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f713cd4621626640800000000000000
+      internalID: 5071722947513882611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_78
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724ab70fb1d7bee0800000000000000
+      internalID: -1245296153546046854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74610bb5ce4827d30800000000000000
+      internalID: 4427747534344033863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_80
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9417c64a2936730800000000000000
+      internalID: 3991194929672047028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd9a0e0d78e38050800000000000000
+      internalID: 5801736368787463646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_82
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18eede829c0186b0800000000000000
+      internalID: -5295937863209261025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795067c542b5c8760800000000000000
+      internalID: 7461438894374258071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_84
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d786f4c2b7749b0d0800000000000000
+      internalID: -3406613048779118467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86839444ab1751d0800000000000000
+      internalID: -3362188204469680499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_86
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc8abf3e294770f0800000000000000
+      internalID: -1119345519391765262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484418e4a94cdea70800000000000000
+      internalID: 8857952209128735876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_88
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fd5ba3810a390a0800000000000000
+      internalID: -6875976180139958489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c82fdd6474e04d80800000000000000
+      internalID: -8268357727141549884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_90
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eba82e7a3c8a5a30800000000000000
+      internalID: 4204827384956365797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20544bc038991ec60800000000000000
+      internalID: 7845720813989020930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b749f258303faf1e0800000000000000
+      internalID: -2163149474553162629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_93
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9047f61effa4d1850800000000000000
+      internalID: 6349313512521561097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_94
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2b4acfae1bd4f90800000000000000
+      internalID: -6967717425653173599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_95
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf2d1dd4ee59ff50800000000000000
+      internalID: 6915663039859339191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_96
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d702060d53d9e1530800000000000000
+      internalID: 3827669587766288509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_97
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9afd939493caae0800000000000000
+      internalID: -1536790386173826632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_98
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a947b7647ba6433c0800000000000000
+      internalID: -4380759202130594662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2a399bd08998ee0800000000000000
+      internalID: -1258307436157885734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_100
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebd0a311ce553d70800000000000000
+      internalID: 9022221611857665006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b981d7d057f11cd0800000000000000
+      internalID: -2589016384171046472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_102
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8fb0f9b0653a490800000000000000
+      internalID: -7736245126979389216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_103
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad48a70eed8347c30800000000000000
+      internalID: 4356169269474133210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3d1efdc349af1f0800000000000000
+      internalID: -1010332177216187468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_105
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cb1a0f274e6ac10800000000000000
+      internalID: 2064588661510487121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_106
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f819579f970b30c50800000000000000
+      internalID: 6630337114342265231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7236ed9fd9037760800000000000000
+      internalID: 7454312664259768957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_108
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacb6bc2be96f5e10800000000000000
+      internalID: 2188584402713754796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdb3b0ab605df400800000000000000
+      internalID: 359531968447364550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643790b443f254de0800000000000000
+      internalID: -1349620611683880122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_111
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06aebab180ddac9a0800000000000000
+      internalID: -6211909709110449568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22274539d2335610800000000000000
+      internalID: 1608685400384545325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8fc80a71a91dc00800000000000000
+      internalID: 923688824856180940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75aa1eed0f61687e0800000000000000
+      internalID: -1763696980281677225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_115
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c47b8d61e71396d0800000000000000
+      internalID: -2985015871043570491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_116
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a485178534520bf0800000000000000
+      internalID: -359632431359884120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_117
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fa98bf97c9eada0800000000000000
+      internalID: -5931631611475284140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_118
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcaf17ca1d2c0990800000000000000
+      internalID: -7418504893152908100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_119
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fd1f5bef6891400800000000000000
+      internalID: 295415679101820815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_120
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ae45c71a9b9c510800000000000000
+      internalID: 1569990048342141523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_121
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e1f5e4a9cd768f0800000000000000
+      internalID: -547226274404295025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_122
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a1cde1b59b9b470800000000000000
+      internalID: 8410957580102015548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_123
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0435e20886cfd09c0800000000000000
+      internalID: -3959230971631480000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_124
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711845a4b59d88390800000000000000
+      internalID: -7815758167189192425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_125
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35d5dd7ea09bd060800000000000000
+      internalID: 6979331126650590526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_126
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a6cbf26c74b7760800000000000000
+      internalID: 7456632524571961981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acae734e85520450800000000000000
+      internalID: 6053494918645460131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_128
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544540508fc723c40800000000000000
+      internalID: 5490588300395959365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_129
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844ebbf81bd844760800000000000000
+      internalID: 7441228278083085384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_130
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759e8638b27413a40800000000000000
+      internalID: 5346132484879346007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_131
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b0996ca810fce70800000000000000
+      internalID: 9137523864507059042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_132
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bf16dcb8ec44040800000000000000
+      internalID: 4631053416685239168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_133
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092ace9f73483fde0800000000000000
+      internalID: -1300550491428838768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_134
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fd75e18956c2000800000000000000
+      internalID: 12496602993778438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_135
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e76a4887c80f4d0800000000000000
+      internalID: -3102825694008803689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_136
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df17f8fc540d6e80800000000000000
+      internalID: -8183880150501875751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_137
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faac86d1c11ad1150800000000000000
+      internalID: 5845005033521334959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_138
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b887e9ad92e4b70800000000000000
+      internalID: 8885085133786876706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_139
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbbc63a204251d90800000000000000
+      internalID: -7127751241493595212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b6b81061bdf59e0800000000000000
+      internalID: -1630343652523152597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_141
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e185ad4f5a0fde70800000000000000
+      internalID: 9142037173026259431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_142
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ca38b472aecf430800000000000000
+      internalID: 3818184038594882606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_143
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5686e2c1fbd15d4e0800000000000000
+      internalID: -1957625756373850011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_144
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae53f66e504951820800000000000000
+      internalID: 2888377489089836522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528e20e4a258cde40800000000000000
+      internalID: 5682563246578657317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_146
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc660cf6693617d70800000000000000
+      internalID: 9039115424880420555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_147
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff5c4b92526375a0800000000000000
+      internalID: -6524763328197402630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_148
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78252a7b741f32530800000000000000
+      internalID: 3829169398520894087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_149
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2238b1cd9567b670800000000000000
+      internalID: 8554417745447891502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_150
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d14e668aea8ab320800000000000000
+      internalID: 2574522876878012880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_151
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a6a7cd25e0459f0800000000000000
+      internalID: -480743511172683141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_152
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116bb0c0dbb8ca210800000000000000
+      internalID: 1345604032744109585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_153
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393fadb3180897ea0800000000000000
+      internalID: -5874522946384759917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_154
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78420b53b4bca0e70800000000000000
+      internalID: 9082295122429748359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_155
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e1640c5d09895b0800000000000000
+      internalID: -5361376108656321005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ea71330c8e58d20800000000000000
+      internalID: 3280283815797829190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_157
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e451cbf8f301c3b50800000000000000
+      internalID: 6574147421234533710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_158
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef5893c54326a6d0800000000000000
+      internalID: -2979655320917745687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_159
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868eea122b7ab9470800000000000000
+      internalID: 8402493913300920424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_160
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dc372acafc671f0800000000000000
+      internalID: -1047421522950238858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_161
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca14eae373601a320800000000000000
+      internalID: 2567340096922468780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_162
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd63e50d24215a830800000000000000
+      internalID: 4081688715454199519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_163
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5417fe51082dd7790800000000000000
+      internalID: -7530631554327940795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3f29a02260929b0800000000000000
+      internalID: -5104541959371689046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_165
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4fbb904dfe9530800000000000000
+      internalID: 3863803984263204582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_166
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305ea358bf88943f0800000000000000
+      internalID: -916050435339787005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_167
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1015a42c572f46b60800000000000000
+      internalID: 7738576647314100481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_168
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4a8557cfe7a7ff0800000000000000
+      internalID: -37578024113625904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_169
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b06962e92a6b3a0800000000000000
+      internalID: -6649948999630058708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_170
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabaedd0e05773230800000000000000
+      internalID: 3618489528838171562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_171
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f7131d28a2cd310800000000000000
+      internalID: 1431065522940772250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_172
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf25fd69019a77f0800000000000000
+      internalID: -614018929497133130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_173
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0948aae4ffe70f390800000000000000
+      internalID: -7786584120722029424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_174
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d891723dae4390800000000000000
+      internalID: -7832132269784902020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d56a2f7a461a800800000000000000
+      internalID: 621888896047144242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_176
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63610072e42220c40800000000000000
+      internalID: 5476977815893055030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_177
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d5e481ac664c600800000000000000
+      internalID: 487627677840071962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_178
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2b2e575f08cb8b0800000000000000
+      internalID: -5135087683376074047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9679da37d428500800000000000000
+      internalID: 396964876390984184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_180
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703881bb4a9927f10800000000000000
+      internalID: 2266042495313412871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_181
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c6468050e304940800000000000000
+      internalID: 5278286954614778908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_182
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293727d93e9a2dc30800000000000000
+      internalID: 4382752182449107858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_183
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b42df1c7d6942650800000000000000
+      internalID: 6207252039840113841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_184
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8cbbbc546c7a940800000000000000
+      internalID: 5307428688952543454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_185
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddef5d75d8bcea460800000000000000
+      internalID: 7254959857664917213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_186
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cc6043be8476380800000000000000
+      internalID: -8978127157112419228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_187
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52301d1331cc55530800000000000000
+      internalID: 3843202239842812709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_188
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0e809196de20cd0800000000000000
+      internalID: -2593249399764623177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_189
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef78c6c8b7c7dab0800000000000000
+      internalID: -4983294866239225885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae24721e85731880800000000000000
+      internalID: -8641434006938440029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_191
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc715dcab796c6960800000000000000
+      internalID: 7596562651368724429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_192
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2d675fdf61ead60800000000000000
+      internalID: 7903279676082541280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_193
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c93133e6f62507e0800000000000000
+      internalID: -1799989634249180735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_194
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5fd912df3f1a360800000000000000
+      internalID: 7179287549521556955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_195
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d0e9820b0e3dca0800000000000000
+      internalID: -5993199631899685599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_196
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc57261f1ed6c1000800000000000000
+      internalID: 8002116532729295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_197
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548c3efb32f2e3300800000000000000
+      internalID: 233676061259581509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_198
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cded40f0ce5b379b0800000000000000
+      internalID: -5083519528902271268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_199
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1a9e7798eb86560800000000000000
+      internalID: 7307299893040226784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e55be074b6bbd6d0800000000000000
+      internalID: -2964575043588499998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_201
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838439f2014bcbe50800000000000000
+      internalID: 6826529116797487160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_202
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac2e362456157ee0800000000000000
+      internalID: -1264079569732883295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_203
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3500d773919fc5e90800000000000000
+      internalID: -7035474631159119789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_204
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16765d50cb35c0f40800000000000000
+      internalID: 5696019695733663585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_205
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcf73aa110fbbbc0800000000000000
+      internalID: -3766152704704381697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_206
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861c807b2a1ca9620800000000000000
+      internalID: 2781748624454369640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_207
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4b1226213f2cdb0800000000000000
+      internalID: -4772985394777967437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_208
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4717b78e8818a50800000000000000
+      internalID: 6521644267494012151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtBrick_Assets_V5_209
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb6c7d6014b52a10800000000000000
+      internalID: 1884110001773767670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
