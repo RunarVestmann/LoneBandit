@@ -5,62 +5,55 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    [Header("Events")] 
-    [SerializeField] UnityEvent dashEvent;
+    [Header("Events")] [SerializeField] UnityEvent dashEvent;
     [SerializeField] UnityEvent jumpEvent;
     [SerializeField] UnityEvent landEvent;
 
-    [Space]
-    
-    [Header("Movement")]
+    [Space] [Header("Movement")] [SerializeField]
+    float movementSpeed;
 
-    [SerializeField] float movementSpeed;
     [SerializeField] float jumpForce;
+    [SerializeField] float airborneJumpForce;
 
-    [Header("Wall Jump")]
-    [SerializeField] float horizontalWallJumpForce;
+    [Header("Wall Jump")] [SerializeField] float horizontalWallJumpForce;
     [SerializeField] float verticalWallJumpForce;
     [SerializeField] float wallJumpTime;
     float elapsedWallJumpTime;
 
-    [Space]
-    
-    [Header("Wall Slide")] [SerializeField]
+    [Space] [Header("Wall Slide")] [SerializeField]
     float wallSlideVerticalVelocity;
 
-    [Space] 
-    
-    [Header("Dash")] 
-    [SerializeField] float dashForce;
+    [Space] [Header("Dash")] [SerializeField]
+    float dashForce;
+
     [SerializeField] float dashTime;
     float elapsedDashTime;
 
-    [Space] 
-    [Header("Colliders")] 
-    [SerializeField] Collider2D belowCollider;
+    [Space] [Header("Colliders")] [SerializeField]
+    Collider2D belowCollider;
 
     [SerializeField] Collider2D frontCollider;
 
-    [Space] 
-    
-    [Header("Layers")] 
-    [SerializeField] LayerMask groundLayer;
+    [Space] [Header("Layers")] [SerializeField]
+    LayerMask groundLayer;
 
     [SerializeField] LayerMask wallLayer;
 
     BetterJump betterJump;
-    
+
     Rigidbody2D body;
     Vector2 moveDirection;
 
     Animator animator;
 
     bool facingRight = true;
+    bool isWallSliding = false;
 
     // bool isAttacking;
-    bool isWallJumping ;
+    bool isWallJumping;
     bool isDashing;
     bool hasDashed;
+    bool hasJumped;
     bool groundStatusLastFrame = true;
 
     int currentAnimationState;
@@ -71,7 +64,9 @@ public class Player : MonoBehaviour
     int JUMP;
 
     int FALL;
+
     // int ATTACK;
+    int WALLSLIDE;
 
     float defaultGravityScale;
 
@@ -84,6 +79,7 @@ public class Player : MonoBehaviour
         RUN = Animator.StringToHash("Run");
         JUMP = Animator.StringToHash("Jump");
         FALL = Animator.StringToHash("Fall");
+        WALLSLIDE = Animator.StringToHash("WallSlide");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
@@ -102,7 +98,7 @@ public class Player : MonoBehaviour
         var direction = moveDirection;
         direction.y = 0f;
         direction.Normalize();
-        
+
         if (isWallJumping)
         {
             elapsedWallJumpTime += Time.deltaTime;
@@ -113,18 +109,24 @@ public class Player : MonoBehaviour
         else
             body.velocity = new Vector2(direction.x * movementSpeed, body.velocity.y);
 
-        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f)
+        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
-            // TODO: add wall slide animation
+            isWallSliding = true;
+            SetAnimationState(WALLSLIDE);
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
         }
+        else
+            isWallSliding = false;
 
         if (IsGrounded())
             hasDashed = false;
 
         if (!groundStatusLastFrame && IsGrounded())
+        {
+            hasJumped = false;
             landEvent.Invoke();
-        
+        }
+
         groundStatusLastFrame = IsGrounded();
     }
 
@@ -134,7 +136,10 @@ public class Player : MonoBehaviour
     {
         if (!context.started) return;
         if (IsGrounded())
+        {
+            hasJumped = true;
             body.AddForce(Vector2.up * jumpForce);
+        }
         else if (IsWallInFront())
         {
             isWallJumping = true;
@@ -143,6 +148,13 @@ public class Player : MonoBehaviour
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
             FlipScale();
         }
+        else if (!hasJumped)
+        {
+            hasJumped = true;
+            body.velocity = new Vector2(body.velocity.x, 0f);
+            body.AddForce(Vector2.up * airborneJumpForce);
+        }
+
         jumpEvent.Invoke();
     }
 
@@ -150,22 +162,27 @@ public class Player : MonoBehaviour
     {
         if (!context.started || isDashing || hasDashed) return;
         var dashDirection = moveDirection;
-        
-        // TODO: clamp direction into 45 degree angle intervals
-        
+
         // Dash in the direction we are facing if there is no input
         if (dashDirection == Vector2.zero)
             dashDirection = transform.localScale.x * Vector2.right;
         else
         {
+            // Clamping the directional input to be a multiple of 45 degrees
             dashDirection.x = ClampDirectionalInput(dashDirection.x);
             dashDirection.y = ClampDirectionalInput(dashDirection.y);
             dashDirection.Normalize();
         }
 
         dashEvent.Invoke();
-        
+
         StartCoroutine(Dash(dashDirection));
+    }
+
+    public void ReplenishMovement()
+    {
+        hasDashed = false;
+        hasJumped = false;
     }
 
     float ClampDirectionalInput(float input)
@@ -184,7 +201,7 @@ public class Player : MonoBehaviour
         body.gravityScale = 0f;
 
         yield return new WaitForSeconds(dashTime);
-        
+
         isDashing = false;
         body.velocity = Vector2.zero;
         body.gravityScale = defaultGravityScale;
@@ -210,6 +227,8 @@ public class Player : MonoBehaviour
         //     SetAnimationState(ATTACK);
         //     return;
         // }
+
+        if (isWallSliding) return;
 
         if (IsGrounded())
             SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);

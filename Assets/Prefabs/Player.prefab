@@ -202,7 +202,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0b237562c6d458d4b92abfe115015ab3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.283
   m_Pitch: 1
   Loop: 0
@@ -329,7 +329,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -900,12 +900,13 @@ MonoBehaviour:
         m_CallState: 2
   movementSpeed: 5
   jumpForce: 800
+  airborneJumpForce: 800
   horizontalWallJumpForce: 400
   verticalWallJumpForce: 960
   wallJumpTime: 0.1
   wallSlideVerticalVelocity: -1
   dashForce: 15
-  dashTime: 0.15
+  dashTime: 0.2
   belowCollider: {fileID: 6094150043091399628}
   frontCollider: {fileID: 6094150042939392006}
   groundLayer:
