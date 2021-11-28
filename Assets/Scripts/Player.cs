@@ -118,7 +118,6 @@ public class Player : MonoBehaviour
 
         if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
-            // TODO: add wall slide animation
             isWallSliding = true;
             SetAnimationState(WALLSLIDE);
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
@@ -158,13 +157,12 @@ public class Player : MonoBehaviour
         if (!context.started || isDashing || hasDashed) return;
         var dashDirection = moveDirection;
         
-        // TODO: clamp direction into 45 degree angle intervals
-        
         // Dash in the direction we are facing if there is no input
         if (dashDirection == Vector2.zero)
             dashDirection = transform.localScale.x * Vector2.right;
         else
         {
+            // Clamping the directional input to be a multiple of 45 degrees
             dashDirection.x = ClampDirectionalInput(dashDirection.x);
             dashDirection.y = ClampDirectionalInput(dashDirection.y);
             dashDirection.Normalize();
