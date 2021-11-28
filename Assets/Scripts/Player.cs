@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
         else
             body.velocity = new Vector2(direction.x * movementSpeed, body.velocity.y);
 
-        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f)
+        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
             // TODO: add wall slide animation
             isWallSliding = true;
@@ -217,14 +217,13 @@ public class Player : MonoBehaviour
         //     SetAnimationState(ATTACK);
         //     return;
         // }
-        if(!isWallSliding)
-        {
-            if (IsGrounded())
-                SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
-            else
-                SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
-
-        }
+        
+        if (isWallSliding) return;
+        
+        if (IsGrounded())
+            SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
+        else
+            SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
     }
 
     void ApplySpriteRotation()
