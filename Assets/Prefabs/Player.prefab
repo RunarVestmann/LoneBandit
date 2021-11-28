@@ -900,12 +900,13 @@ MonoBehaviour:
         m_CallState: 2
   movementSpeed: 5
   jumpForce: 800
+  airborneJumpForce: 800
   horizontalWallJumpForce: 400
   verticalWallJumpForce: 960
   wallJumpTime: 0.1
   wallSlideVerticalVelocity: -1
   dashForce: 15
-  dashTime: 0.15
+  dashTime: 0.2
   belowCollider: {fileID: 6094150043091399628}
   frontCollider: {fileID: 6094150042939392006}
   groundLayer:
