@@ -915,6 +915,8 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 1
+  dashParticles: {fileID: 1674966332511933801, guid: ce082c6d45fed3d42b9591a4003808a5, type: 3}
+  dashTrail: {fileID: 2314717748647077726, guid: 306a37972d4d458428215f4ac62e59be, type: 3}
 --- !u!114 &6094150044013158600
 MonoBehaviour:
   m_ObjectHideFlags: 0

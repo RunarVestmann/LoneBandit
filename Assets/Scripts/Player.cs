@@ -46,6 +46,9 @@ public class Player : MonoBehaviour
 
     Animator animator;
 
+    //Particles 
+    public GameObject dashParticles;
+    public GameObject dashTrail;
     bool facingRight = true;
     bool isWallSliding = false;
 
@@ -63,7 +66,7 @@ public class Player : MonoBehaviour
     int IDLE;
     int RUN;
     int JUMP;
-
+    int DASH;
     int FALL;
 
     // int ATTACK;
@@ -83,6 +86,7 @@ public class Player : MonoBehaviour
         FALL = Animator.StringToHash("Fall");
         WALLSLIDE = Animator.StringToHash("WallSlide");
         DEATH = Animator.StringToHash("Death");
+        DASH = Animator.StringToHash("Dash");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
@@ -164,10 +168,12 @@ public class Player : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
+        
         if (!context.started || isDashing || hasDashed) return;
         var dashDirection = moveDirection;
-
+        
         // Dash in the direction we are facing if there is no input
+
         if (dashDirection == Vector2.zero)
             dashDirection = transform.localScale.x * Vector2.right;
         else
@@ -179,7 +185,8 @@ public class Player : MonoBehaviour
         }
 
         dashEvent.Invoke();
-
+      
+        
         StartCoroutine(Dash(dashDirection));
     }
 
@@ -198,6 +205,10 @@ public class Player : MonoBehaviour
 
     IEnumerator Dash(Vector2 direction)
     {
+        GameObject dasheffect = (GameObject)Instantiate(dashParticles, transform.position, Quaternion.identity);
+        var dashtrail = Instantiate(dashTrail, transform.position, Quaternion.identity);
+        dashtrail.transform.SetParent(body.transform); //setting the trail as the child of the player 
+
         betterJump.enabled = false;
         isDashing = true;
         hasDashed = true;
@@ -210,6 +221,8 @@ public class Player : MonoBehaviour
         body.velocity = Vector2.zero;
         body.gravityScale = defaultGravityScale;
         betterJump.enabled = true;
+        Destroy(dasheffect, 0.5f);
+        Destroy(dashtrail, dashTime);
     }
 
     void FlipScale()
