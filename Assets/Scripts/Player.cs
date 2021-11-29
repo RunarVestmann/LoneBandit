@@ -47,8 +47,14 @@ public class Player : MonoBehaviour
     Animator animator;
 
     //Particles 
+    [Space] [Header("Particles")] 
     public GameObject dashParticles;
     public GameObject dashTrail;
+    public GameObject landingParticles;
+    public GameObject jumpingParticles;
+    public GameObject wallSlidingParticles;
+
+
     bool facingRight = true;
     bool isWallSliding = false;
 
@@ -118,11 +124,15 @@ public class Player : MonoBehaviour
 
         if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
+            float particleDir = direction.x * 0.2f;
+            GameObject wallslidingparticle = (GameObject)Instantiate(wallSlidingParticles,new Vector3(body.transform.position.x + particleDir , body.transform.position.y, body.transform.position.z), Quaternion.identity);
+            Destroy(wallslidingparticle, 0.3f);
             isWallSliding = true;
             SetAnimationState(WALLSLIDE);
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
         }
         else
+            
             isWallSliding = false;
 
         if (IsGrounded())
@@ -130,6 +140,9 @@ public class Player : MonoBehaviour
 
         if (!groundStatusLastFrame && IsGrounded())
         {
+
+            GameObject landingparticle = (GameObject)Instantiate(landingParticles, transform.position, Quaternion.identity);
+            Destroy(landingparticle, 0.3f);
             hasJumped = false;
             landEvent.Invoke();
         }
@@ -141,20 +154,29 @@ public class Player : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
+        var direction = moveDirection;
+        direction.y = 0f;
+        direction.Normalize();
+
         if (!context.started) return;
         if (IsGrounded())
         {
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * jumpForce);
+            GameObject jumpeffect = (GameObject)Instantiate(jumpingParticles, transform.position, Quaternion.identity);
+            Destroy(jumpeffect, 0.5f);
         }
         else if (IsWallInFront())
         {
+            float particleDir = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
             body.AddForce(Vector2.up * verticalWallJumpForce);
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
             FlipScale();
+            GameObject jumpeffect = (GameObject)Instantiate(jumpingParticles, new Vector3(body.transform.position.x + particleDir, body.transform.position.y, body.transform.position.z), Quaternion.identity);
+            Destroy(jumpeffect, 0.5f);
         }
         else if (!hasJumped)
         {
