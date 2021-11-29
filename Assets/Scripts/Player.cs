@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
     bool hasDashed;
     bool hasJumped;
     bool groundStatusLastFrame = true;
+    bool isDead;
 
     int currentAnimationState;
 
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour
 
     // int ATTACK;
     int WALLSLIDE;
+    int DEATH;
 
     float defaultGravityScale;
 
@@ -80,6 +82,7 @@ public class Player : MonoBehaviour
         JUMP = Animator.StringToHash("Jump");
         FALL = Animator.StringToHash("Fall");
         WALLSLIDE = Animator.StringToHash("WallSlide");
+        DEATH = Animator.StringToHash("Death");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
@@ -93,7 +96,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDashing) return;
+        if (isDashing || isDead) return;
 
         var direction = moveDirection;
         direction.y = 0f;
@@ -138,6 +141,7 @@ public class Player : MonoBehaviour
         if (IsGrounded())
         {
             hasJumped = true;
+            body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * jumpForce);
         }
         else if (IsWallInFront())
@@ -228,7 +232,7 @@ public class Player : MonoBehaviour
         //     return;
         // }
 
-        if (isWallSliding) return;
+        if (isWallSliding || isDead) return;
 
         if (IsGrounded())
             SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
@@ -254,10 +258,25 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnDeath()
+    {
+        body.gravityScale = 0;
+        body.velocity = Vector2.zero;
+        GetComponent<Collider2D>().enabled = false;
+        isDead = true;
+        SetAnimationState(DEATH);
+    }
+
     void SetAnimationState(int state)
     {
         if (currentAnimationState == state) return;
         animator.Play(state);
         currentAnimationState = state;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Trap"))
+            OnDeath();
     }
 }
