@@ -1,5 +1,5 @@
 {
-    "name": "UserInput",
+    "name": "Controls",
     "maps": [
         {
             "name": "Player",
@@ -33,6 +33,14 @@
                     "name": "Dash",
                     "type": "Button",
                     "id": "a621d08c-060a-4bd8-8526-e89e318388b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "2b4c0343-0327-4a67-954e-f9c83c7bafe8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -278,6 +286,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dee18da2-d732-498c-bc86-876577f88e36",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b40192e2-1c68-4e76-82cd-878ac36f77e2",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
