@@ -917,6 +917,9 @@ MonoBehaviour:
     m_Bits: 1
   dashParticles: {fileID: 1674966332511933801, guid: ce082c6d45fed3d42b9591a4003808a5, type: 3}
   dashTrail: {fileID: 2314717748647077726, guid: 306a37972d4d458428215f4ac62e59be, type: 3}
+  landingParticles: {fileID: 5696677638435646205, guid: 2802de4e875889748ae3b32110d2da47, type: 3}
+  jumpingParticles: {fileID: 4867439638579883012, guid: 76c85a431daa0df4595d6ce6fbf5be4d, type: 3}
+  wallSlidingParticles: {fileID: 1084237987666095028, guid: 0da8f361b3ce3f349adc73a22f0c5ec2, type: 3}
 --- !u!114 &6094150044013158600
 MonoBehaviour:
   m_ObjectHideFlags: 0
