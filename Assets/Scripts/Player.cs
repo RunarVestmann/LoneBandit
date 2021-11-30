@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] UnityEvent jumpEvent;
     [SerializeField] UnityEvent landEvent;
     [SerializeField] UnityEvent deathEvent;
+    [SerializeField] UnityEvent coinEvent;
 
     [Space] [Header("Movement")] [SerializeField]
     float movementSpeed;
@@ -330,5 +331,7 @@ public class Player : MonoBehaviour
     {
         if (collider.CompareTag("Trap"))
             OnDeath();
+       else if (collider.CompareTag("Coin")) 
+            coinEvent.Invoke();
     }
 }
