@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [Header("Events")] [SerializeField] UnityEvent dashEvent;
     [SerializeField] UnityEvent jumpEvent;
     [SerializeField] UnityEvent landEvent;
+    [SerializeField] UnityEvent deathEvent;
 
     [Space] [Header("Movement")] [SerializeField]
     float movementSpeed;
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
     // int ATTACK;
     int WALLSLIDE;
     int DEATH;
+    int RESPAWN;
 
     float defaultGravityScale;
 
@@ -83,6 +85,7 @@ public class Player : MonoBehaviour
         FALL = Animator.StringToHash("Fall");
         WALLSLIDE = Animator.StringToHash("WallSlide");
         DEATH = Animator.StringToHash("Death");
+        RESPAWN = Animator.StringToHash("Respawn");
         // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
@@ -265,6 +268,20 @@ public class Player : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         isDead = true;
         SetAnimationState(DEATH);
+        deathEvent.Invoke();
+    }
+
+    public void OnRespawn()
+    {
+        body.gravityScale = 1;
+        GetComponent<Collider2D>().enabled = true;
+        SetAnimationState(RESPAWN);
+        Invoke("Respawned", 0.4f);
+    }
+
+    void Respawned()
+    {
+        isDead = false;
     }
 
     void SetAnimationState(int state)
