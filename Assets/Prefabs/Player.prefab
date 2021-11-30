@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 6094150044013158607}
   - component: {fileID: 6094150044013158601}
   - component: {fileID: 6094150044013158600}
+  - component: {fileID: 1162654158}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -868,6 +869,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CameraShake, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   jumpEvent:
     m_PersistentCalls:
       m_Calls:
@@ -889,6 +902,21 @@ MonoBehaviour:
       - m_Target: {fileID: 584611939}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1162654158}
+        m_TargetAssemblyTypeName: PlayerSpawnLocation, Assembly-CSharp
+        m_MethodName: OnPlayerDeath
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -935,3 +963,31 @@ MonoBehaviour:
   body: {fileID: 6094150044013158607}
   fallMultiplier: 0.7
   lowJumpMultiplier: 3
+--- !u!114 &1162654158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094150044013158643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175039a924a80ac48b25e0a2357acbf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpawnLocation: {fileID: 0}
+  hasRespawned:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6094150044013158601}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnRespawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

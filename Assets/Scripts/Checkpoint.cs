@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Checkpoint : MonoBehaviour
 {
     Animator animator;
-    Transform transform;
 
     [SerializeField] UnityEvent<Vector3> spawnLocationEvent;
 
@@ -15,7 +14,6 @@ public class Checkpoint : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        transform = GetComponent<Transform>();
     }
 
     void OnTriggerEnter2D(Collider2D collider)

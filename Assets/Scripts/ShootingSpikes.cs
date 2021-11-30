@@ -5,18 +5,14 @@ using UnityEngine;
 public class ShootingSpikes : MonoBehaviour
 {
     Rigidbody2D rb2d;
-    Transform transform;
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        transform = GetComponent<Transform>();
-
-
     }
 
-    public void Shoot(Vector2 direction, float speed, float rotateX)
+    public void Shoot(Vector2 direction, float speed)
     {
-        transform.Rotate(rotateX, 0.0f, 0.0f, Space.Self);
+        transform.up = direction;
         rb2d.velocity = direction * speed;
     }
 

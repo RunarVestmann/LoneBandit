@@ -9,7 +9,6 @@ public class ShootingTrap : MonoBehaviour
     [SerializeField] Vector2 direction;
     [SerializeField] float speed;
     [SerializeField] float timeBetweenShots;
-    [SerializeField] float rotationX;
 
     Animator animator;
 
@@ -43,6 +42,6 @@ public class ShootingTrap : MonoBehaviour
     {
         var spikesObject = Instantiate(spikesPrefab, spawnPosition.position, Quaternion.identity);
         var spikes = spikesObject.GetComponent<ShootingSpikes>();
-        spikes.Shoot(direction, speed, rotationX);
+        spikes.Shoot(direction, speed);
     }
 }
