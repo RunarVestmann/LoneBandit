@@ -990,8 +990,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   movementSpeed: 5
-  jumpForce: 800
-  airborneJumpForce: 800
+  jumpForce: 17
+  airborneJumpForce: 17
   horizontalWallJumpForce: 400
   verticalWallJumpForce: 960
   wallJumpTime: 0.3
