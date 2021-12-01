@@ -2,6 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class Player : MonoBehaviour
 {
@@ -29,7 +32,6 @@ public class Player : MonoBehaviour
     float dashForce;
 
     [SerializeField] float dashTime;
-    float elapsedDashTime;
 
     [Space] [Header("Colliders")] [SerializeField]
     Collider2D belowCollider;
@@ -49,8 +51,7 @@ public class Player : MonoBehaviour
     Animator animator;
 
     //Particles 
-    [Space] [Header("Particles")] 
-    public GameObject dashParticles;
+    [Space] [Header("Particles")] public GameObject dashParticles;
     public GameObject dashTrail;
     public GameObject landingParticles;
     public GameObject jumpingParticles;
@@ -58,9 +59,8 @@ public class Player : MonoBehaviour
 
 
     bool facingRight = true;
-    bool isWallSliding = false;
+    bool isWallSliding;
 
-    // bool isAttacking;
     bool isWallJumping;
     bool isDashing;
     bool hasDashed;
@@ -74,10 +74,7 @@ public class Player : MonoBehaviour
     int IDLE;
     int RUN;
     int JUMP;
-    int DASH;
     int FALL;
-
-    // int ATTACK;
     int WALLSLIDE;
     int DEATH;
     int RESPAWN;
@@ -96,14 +93,13 @@ public class Player : MonoBehaviour
         WALLSLIDE = Animator.StringToHash("WallSlide");
         DEATH = Animator.StringToHash("Death");
         RESPAWN = Animator.StringToHash("Respawn");
-        DASH = Animator.StringToHash("Dash");
-        // ATTACK = Animator.StringToHash("Attack");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
     }
 
     void Update()
     {
+        if (isDead) return;
         ApplyAnimations();
         ApplySpriteRotation();
     }
@@ -128,15 +124,17 @@ public class Player : MonoBehaviour
 
         if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
-            float particleDir = direction.x * 0.2f;
-            GameObject wallslidingparticle = (GameObject)Instantiate(wallSlidingParticles,new Vector3(body.transform.position.x + particleDir , body.transform.position.y, body.transform.position.z), Quaternion.identity);
-            Destroy(wallslidingparticle, 0.3f);
+            var particleDir = direction.x * 0.2f;
+            var position = body.transform.position;
+            var wallSlidingParticle = (GameObject) Instantiate(wallSlidingParticles,
+                new Vector3(position.x + particleDir, position.y, position.z), Quaternion.identity);
+            Destroy(wallSlidingParticle, 0.3f);
             isWallSliding = true;
             SetAnimationState(WALLSLIDE);
-            body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, wallSlideVerticalVelocity));
+            var velocity = body.velocity;
+            body.velocity = new Vector2(velocity.x, Mathf.Max(velocity.y, wallSlideVerticalVelocity));
         }
         else
-            
             isWallSliding = false;
 
         if (IsGrounded())
@@ -144,9 +142,8 @@ public class Player : MonoBehaviour
 
         if (!groundStatusLastFrame && IsGrounded())
         {
-
-            GameObject landingparticle = (GameObject)Instantiate(landingParticles, transform.position, Quaternion.identity);
-            Destroy(landingparticle, 0.3f);
+            var landingParticle = (GameObject) Instantiate(landingParticles, transform.position, Quaternion.identity);
+            Destroy(landingParticle, 0.3f);
             hasJumped = false;
             landEvent.Invoke();
         }
@@ -162,31 +159,34 @@ public class Player : MonoBehaviour
         direction.y = 0f;
         direction.Normalize();
 
-        if (!context.started) return;
+        if (!context.started || isDead) return;
+
         if (IsGrounded())
         {
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
-            body.AddForce(Vector2.up * jumpForce);
-            GameObject jumpeffect = (GameObject)Instantiate(jumpingParticles, transform.position, Quaternion.identity);
-            Destroy(jumpeffect, 0.5f);
+            body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            var jumpEffect = (GameObject) Instantiate(jumpingParticles, transform.position, Quaternion.identity);
+            Destroy(jumpEffect, 0.5f);
         }
         else if (IsWallInFront())
         {
-            float particleDir = direction.x * 0.2f;
+            var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
             body.AddForce(Vector2.up * verticalWallJumpForce);
             body.AddForce(-transform.localScale * horizontalWallJumpForce);
             FlipScale();
-            GameObject jumpeffect = (GameObject)Instantiate(jumpingParticles, new Vector3(body.transform.position.x + particleDir, body.transform.position.y, body.transform.position.z), Quaternion.identity);
-            Destroy(jumpeffect, 0.5f);
+            var position = transform.position;
+            var jumpEffect = (GameObject) Instantiate(jumpingParticles,
+                new Vector3(position.x + particleDirection, position.y, position.z), Quaternion.identity);
+            Destroy(jumpEffect, 0.5f);
         }
         else if (!hasJumped)
         {
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
-            body.AddForce(Vector2.up * airborneJumpForce);
+            body.AddForce(Vector2.up * airborneJumpForce, ForceMode2D.Impulse);
         }
 
         jumpEvent.Invoke();
@@ -194,12 +194,10 @@ public class Player : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        
         if (!context.started || isDashing || hasDashed) return;
         var dashDirection = moveDirection;
-        
-        // Dash in the direction we are facing if there is no input
 
+        // Dash in the direction we are facing if there is no input
         if (dashDirection == Vector2.zero)
             dashDirection = transform.localScale.x * Vector2.right;
         else
@@ -211,8 +209,6 @@ public class Player : MonoBehaviour
         }
 
         dashEvent.Invoke();
-      
-        
         StartCoroutine(Dash(dashDirection));
     }
 
@@ -231,24 +227,27 @@ public class Player : MonoBehaviour
 
     IEnumerator Dash(Vector2 direction)
     {
-        GameObject dasheffect = (GameObject)Instantiate(dashParticles, transform.position, Quaternion.identity);
-        var dashtrail = Instantiate(dashTrail, transform.position, Quaternion.identity);
-        dashtrail.transform.SetParent(body.transform); //setting the trail as the child of the player 
+        var dashEffect = (GameObject) Instantiate(dashParticles, transform.position, Quaternion.identity);
+        var trailEffect = Instantiate(dashTrail, transform.position, Quaternion.identity);
+        trailEffect.transform.SetParent(body.transform); //setting the trail as the child of the player 
 
         betterJump.enabled = false;
         isDashing = true;
         hasDashed = true;
-        body.velocity = direction * dashForce;
         body.gravityScale = 0f;
-
+        body.velocity = Vector2.zero;
+        body.velocity = direction * dashForce;
+        
         yield return new WaitForSeconds(dashTime);
 
         isDashing = false;
+
         body.velocity = Vector2.zero;
+
         body.gravityScale = defaultGravityScale;
         betterJump.enabled = true;
-        Destroy(dasheffect, 0.5f);
-        Destroy(dashtrail, dashTime);
+        Destroy(dashEffect, 0.5f);
+        Destroy(trailEffect, dashTime);
     }
 
     void FlipScale()
@@ -265,12 +264,6 @@ public class Player : MonoBehaviour
 
     void ApplyAnimations()
     {
-        // if (isAttacking)
-        // {
-        //     SetAnimationState(ATTACK);
-        //     return;
-        // }
-
         if (isWallSliding || isDead) return;
 
         if (IsGrounded())
@@ -312,13 +305,10 @@ public class Player : MonoBehaviour
         body.gravityScale = 1;
         GetComponent<Collider2D>().enabled = true;
         SetAnimationState(RESPAWN);
-        Invoke("Respawned", 0.4f);
+        Invoke(nameof(Respawned), 0.4f);
     }
 
-    void Respawned()
-    {
-        isDead = false;
-    }
+    void Respawned() => isDead = false;
 
     void SetAnimationState(int state)
     {
@@ -327,11 +317,11 @@ public class Player : MonoBehaviour
         currentAnimationState = state;
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collider.CompareTag("Trap"))
+        if (other.CompareTag("Trap") && !isDead)
             OnDeath();
-       else if (collider.CompareTag("Coin")) 
+        if (other.CompareTag("Coin"))
             coinEvent.Invoke();
     }
 }
