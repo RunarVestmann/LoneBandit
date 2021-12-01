@@ -19,7 +19,6 @@ public class Coin : MonoBehaviour
 
     void CoinCollection()
     {
-        Debug.Log("Get Rekt");
         onCoinCollect.Invoke();
         coinCollider.enabled = false;
         hasBeenPickedUp = true;
