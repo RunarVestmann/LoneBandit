@@ -19,9 +19,12 @@ public class Checkpoint : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (isActive) return;
+        var player = collider.GetComponent<Player>();
+        if (!player) return;
         animator.Play("Active");
         isActive = true;
         spawnLocationEvent.Invoke(transform.position);
+        Debug.Log(transform.position);
     }
 
 
