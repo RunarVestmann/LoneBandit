@@ -316,12 +316,17 @@ public class Player : MonoBehaviour
         animator.Play(state);
         currentAnimationState = state;
     }
+    
+    Collider2D lastCoinTouched;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Trap") && !isDead)
             OnDeath();
-        if (other.CompareTag("Coin"))
+        if (other.CompareTag("Coin") && other != lastCoinTouched)
+        {
+            lastCoinTouched = other;
             coinEvent.Invoke();
+        }
     }
 }
