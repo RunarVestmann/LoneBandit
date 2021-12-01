@@ -174,8 +174,8 @@ public class Player : MonoBehaviour
             var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
-            body.AddForce(Vector2.up * verticalWallJumpForce);
-            body.AddForce(-transform.localScale * horizontalWallJumpForce);
+            body.AddForce(Vector2.up * verticalWallJumpForce, ForceMode2D.Impulse);
+            body.AddForce(-transform.localScale * horizontalWallJumpForce, ForceMode2D.Impulse);
             FlipScale();
             var position = transform.position;
             var jumpEffect = (GameObject) Instantiate(jumpingParticles,

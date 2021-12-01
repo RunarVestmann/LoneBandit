@@ -980,8 +980,8 @@ MonoBehaviour:
   movementSpeed: 5
   jumpForce: 17
   airborneJumpForce: 17
-  horizontalWallJumpForce: 400
-  verticalWallJumpForce: 960
+  horizontalWallJumpForce: 5
+  verticalWallJumpForce: 8
   wallJumpTime: 0.3
   wallSlideVerticalVelocity: -1
   dashForce: 15

@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: verticalWallJumpForce
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: wallSlideVerticalVelocity
       value: -1.2
       objectReference: {fileID: 0}
