@@ -9,15 +9,17 @@ public class CollapsibleStone : MonoBehaviour
 
     bool isActive;
 
-    float elapsedTime = 0;
+    float elapsedTime = 0f;
 
     Animator animator;
-
+    Vector3 originalPosition;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
-        
+        originalPosition = transform.position;
+
+
     }
 
     void FixedUpdate()
@@ -26,13 +28,18 @@ public class CollapsibleStone : MonoBehaviour
         {
             if (elapsedTime > shakeTime)
             {
+                elapsedTime = 0f;
+                isActive = false;
                 animator.enabled = false;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 parent.GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 3f);
+                Invoke("Reset", 3f);
             }
             else
+            {
                 elapsedTime += 0.01f;
+                Debug.Log(elapsedTime);
+            }
         }
     }
 
@@ -48,5 +55,13 @@ public class CollapsibleStone : MonoBehaviour
         animator.enabled = true;
         animator.Play("Shake");
         isActive = true;
+    }
+
+    void Reset()
+    {
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        parent.GetComponent<BoxCollider2D>().enabled = true;
+        transform.position = originalPosition;
+        transform.rotation = Quaternion.identity;
     }
 }

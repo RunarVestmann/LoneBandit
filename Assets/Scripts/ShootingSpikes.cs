@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class ShootingSpikes : MonoBehaviour
 {
-    [SerializeField] float timeToLive;
     Rigidbody2D rb2d;
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, timeToLive);
     }
 
-    public void Shoot(Vector2 direction, float speed)
+    public void Shoot(Vector2 direction, float speed, float timeToLive)
     {
         transform.up = direction;
         rb2d.velocity = direction * speed;
+        Destroy(gameObject, timeToLive);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

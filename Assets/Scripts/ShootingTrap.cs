@@ -9,10 +9,13 @@ public class ShootingTrap : MonoBehaviour
     [SerializeField] Vector2 direction;
     [SerializeField] float speed;
     [SerializeField] float timeBetweenShots;
+    [SerializeField] float shootOffset;
+    [SerializeField] float spikeLifeTime;
 
     Animator animator;
 
     float counter = 0f;
+    float offsetCounter = 0f;
 
     void Awake()
     {
@@ -22,6 +25,12 @@ public class ShootingTrap : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (offsetCounter < shootOffset)
+        {
+            offsetCounter += Time.deltaTime;
+            return;
+        }
+
         if (counter > timeBetweenShots)
         {
             animator.Play("Shoot");
@@ -42,6 +51,6 @@ public class ShootingTrap : MonoBehaviour
     {
         var spikesObject = Instantiate(spikesPrefab, spawnPosition.position, Quaternion.identity);
         var spikes = spikesObject.GetComponent<ShootingSpikes>();
-        spikes.Shoot(direction, speed);
+        spikes.Shoot(direction, speed, spikeLifeTime);
     }
 }
