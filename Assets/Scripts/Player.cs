@@ -159,7 +159,7 @@ public class Player : MonoBehaviour
         direction.y = 0f;
         direction.Normalize();
 
-        if (!context.started || isDead) return;
+        if (!context.started || isDead || !enabled) return;
 
         if (IsGrounded())
         {
@@ -194,7 +194,7 @@ public class Player : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (!context.started || isDashing || hasDashed) return;
+        if (!context.started || isDashing || hasDashed || !enabled) return;
         var dashDirection = moveDirection;
 
         // Dash in the direction we are facing if there is no input
