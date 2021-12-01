@@ -131,8 +131,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: dashEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      propertyPath: wallSlideVerticalVelocity
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: coinEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -150,26 +150,6 @@ PrefabInstance:
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1212481359}
-    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: coinEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: onCoinPickup
-      objectReference: {fileID: 0}
-    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: dashEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: onPlayerDash
-      objectReference: {fileID: 0}
-    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: jumpEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: onPlayerJump
-      objectReference: {fileID: 0}
-    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: onPlayerDeath
-      objectReference: {fileID: 0}
-    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
-      propertyPath: dashEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158604, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_RootOrder
       value: 4
