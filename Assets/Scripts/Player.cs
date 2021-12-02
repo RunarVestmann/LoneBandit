@@ -163,6 +163,7 @@ public class Player : MonoBehaviour
 
         if (IsGrounded())
         {
+            jumpEvent.Invoke();
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -171,6 +172,7 @@ public class Player : MonoBehaviour
         }
         else if (IsWallInFront())
         {
+            jumpEvent.Invoke();
             var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
@@ -184,12 +186,11 @@ public class Player : MonoBehaviour
         }
         else if (!hasJumped)
         {
+            jumpEvent.Invoke();
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * airborneJumpForce, ForceMode2D.Impulse);
         }
-
-        jumpEvent.Invoke();
     }
 
     public void OnDash(InputAction.CallbackContext context)

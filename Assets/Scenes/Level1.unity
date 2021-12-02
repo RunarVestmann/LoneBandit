@@ -476,7 +476,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 708580939}
-  - component: {fileID: 708580938}
   m_Layer: 0
   m_Name: CameraBounds
   m_TagString: Untagged
@@ -484,49 +483,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &708580938
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708580937}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -4.527484, y: -0.86893034}
-      - {x: 10.890204, y: -1.0597311}
-      - {x: 37.78263, y: -1.068067}
-      - {x: 57.738697, y: -0.84479046}
-      - {x: 68.688614, y: -0.8698511}
-      - {x: 80.876816, y: -0.82727146}
-      - {x: 80.94705, y: 12.01914}
-      - {x: 80.85901, y: 19.688261}
-      - {x: 80.848694, y: 19.717714}
-      - {x: 80.94316, y: 20.167583}
-      - {x: 80.92278, y: 20.39757}
-      - {x: 80.679184, y: 33.586987}
-      - {x: 80.65386, y: 33.550133}
-      - {x: 80.88037, y: 44.44173}
-      - {x: 65.22658, y: 44.531525}
-      - {x: 47.83874, y: 44.56148}
-      - {x: 37.63858, y: 40.798042}
-      - {x: -4.7041616, y: 39.972065}
 --- !u!4 &708580939
 Transform:
   m_ObjectHideFlags: 0
@@ -18889,7 +18845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4883195199547337330}
   m_LocalRotation: {x: 0.0071995333, y: 4.656493e-10, z: -3.3525442e-12, w: 0.99997413}
-  m_LocalPosition: {x: 7.9111123, y: 6.1303444, z: -9.998963}
+  m_LocalPosition: {x: -1.4, y: 0.64398694, z: -9.998963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4883195199622353916}
@@ -19126,7 +19082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 708580938}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1001 &8179739391811174771
