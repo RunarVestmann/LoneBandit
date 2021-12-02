@@ -290,6 +290,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  pointLight: {fileID: 857305865}
 --- !u!95 &8179739393601717454
 Animator:
   serializedVersion: 3

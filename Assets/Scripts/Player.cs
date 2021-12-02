@@ -177,7 +177,7 @@ public class Player : MonoBehaviour
             isWallJumping = true;
             body.velocity = Vector2.zero;
             body.AddForce(Vector2.up * verticalWallJumpForce, ForceMode2D.Impulse);
-            body.AddForce(-transform.localScale * horizontalWallJumpForce, ForceMode2D.Impulse);
+            body.AddForce((IsWallInFront() ? -transform.localScale : transform.localScale) * horizontalWallJumpForce, ForceMode2D.Impulse);
             FlipScale();
             var position = transform.position;
             var jumpEffect = (GameObject) Instantiate(jumpingParticles,
@@ -333,5 +333,11 @@ public class Player : MonoBehaviour
             lastCoinTouched = other;
             coinEvent.Invoke();
         }
+    }
+    
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Trap") && !isDead)
+            OnDeath();
     }
 }
