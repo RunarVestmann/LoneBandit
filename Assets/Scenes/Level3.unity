@@ -5706,12 +5706,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 583929819}
     - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1212481359}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2000741129}
     - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnJumpInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150043796971484, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158600, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: fallMultiplier
@@ -5775,11 +5803,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158604, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.33
+      value: -13.11
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158604, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.12
+      value: -11.38
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158604, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -83326,7 +83354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4883195199547337330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.61043, y: -11.124253, z: -12}
+  m_LocalPosition: {x: -6.625579, y: -11.384824, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4883195199622353916}
@@ -83524,7 +83552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4883195199755515823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.33, y: -11.12, z: -12}
+  m_LocalPosition: {x: -13.11, y: -11.38, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4883195199655383145}

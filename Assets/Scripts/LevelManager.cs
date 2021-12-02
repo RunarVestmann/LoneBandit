@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -14,8 +15,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dashUI;
     [SerializeField] TextMeshProUGUI deathUI;
     [SerializeField] Player player;
+    [SerializeField] float timeUntilYouCanChangeLevels = 1.3f;
+    bool loadingLevel;
     
     float elapsedTime = 0f;
+    float elapsedTimeSinceLevelComplete;
     bool levelComplete;
     
     int highScore = 0;
@@ -26,7 +30,11 @@ public class LevelManager : MonoBehaviour
         //if (score > highScore)
         //    highScore = score;
 
-        if (levelComplete) return;
+        if (levelComplete)
+        {
+            elapsedTimeSinceLevelComplete += Time.deltaTime;
+            return;
+        }
         
         var timespan = TimeSpan.FromSeconds(elapsedTime);
         timer.text = $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
@@ -46,7 +54,10 @@ public class LevelManager : MonoBehaviour
 
     public void OnJumpInput()
     {
-        
+        if (!levelComplete || loadingLevel || timeUntilYouCanChangeLevels > elapsedTimeSinceLevelComplete) return;
+        loadingLevel = true;
+        var index = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(index < SceneManager.sceneCountInBuildSettings ? index : 0);
     }
 
     public void onPlayerJump() => jumps++;
