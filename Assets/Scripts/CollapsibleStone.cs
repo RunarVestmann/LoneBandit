@@ -6,6 +6,7 @@ public class CollapsibleStone : MonoBehaviour
 {
     [SerializeField] float shakeTime;
     [SerializeField] GameObject parent;
+    [SerializeField] float resetTime = 3f;
 
     bool isActive;
 
@@ -33,7 +34,7 @@ public class CollapsibleStone : MonoBehaviour
                 animator.enabled = false;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 parent.GetComponent<BoxCollider2D>().enabled = false;
-                Invoke("Reset", 3f);
+                Invoke("Reset", resetTime);
             }
             else
             {

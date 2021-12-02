@@ -1390,7 +1390,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 45b28716b7ae51647804f12d9303c7e0, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1404,7 +1404,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 3426855560871296911}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 45b28716b7ae51647804f12d9303c7e0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -18573,7 +18573,7 @@ GameObject:
   - component: {fileID: 3426855560871296897}
   - component: {fileID: 3426855560871296898}
   - component: {fileID: 3426855560871296899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap_Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18729,7 +18729,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18991,7 +18991,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1516914179}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

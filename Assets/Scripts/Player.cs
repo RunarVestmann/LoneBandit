@@ -194,7 +194,7 @@ public class Player : MonoBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (!context.started || isDashing || hasDashed || !enabled) return;
+        if (!context.started || isDashing || hasDashed || !enabled || isDead) return;
         var dashDirection = moveDirection;
 
         // Dash in the direction we are facing if there is no input
@@ -294,7 +294,6 @@ public class Player : MonoBehaviour
     {
         body.gravityScale = 0;
         body.velocity = Vector2.zero;
-        GetComponent<Collider2D>().enabled = false;
         isDead = true;
         SetAnimationState(DEATH);
         deathEvent.Invoke();
@@ -303,7 +302,6 @@ public class Player : MonoBehaviour
     public void OnRespawn()
     {
         body.gravityScale = 1;
-        GetComponent<Collider2D>().enabled = true;
         SetAnimationState(RESPAWN);
         Invoke(nameof(Respawned), 0.4f);
     }
