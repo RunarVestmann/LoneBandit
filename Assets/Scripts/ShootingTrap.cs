@@ -11,6 +11,7 @@ public class ShootingTrap : MonoBehaviour
     [SerializeField] float timeBetweenShots;
     [SerializeField] float shootOffset;
     [SerializeField] float spikeLifeTime;
+    [SerializeField] AudioSource audioSource;
 
     Animator animator;
 
@@ -49,6 +50,8 @@ public class ShootingTrap : MonoBehaviour
 
     public void Shoot()
     {
+        audioSource.pitch = Random.Range(0.8f, 1.2f);
+        audioSource.Play();
         var spikesObject = Instantiate(spikesPrefab, spawnPosition.position, Quaternion.identity);
         var spikes = spikesObject.GetComponent<ShootingSpikes>();
         spikes.Shoot(direction, speed, spikeLifeTime);
