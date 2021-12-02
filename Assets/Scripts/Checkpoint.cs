@@ -8,6 +8,7 @@ public class Checkpoint : MonoBehaviour
     Animator animator;
 
     [SerializeField] UnityEvent<Vector3> spawnLocationEvent;
+    [SerializeField] AudioSource audioSource;
 
     bool isActive;
 
@@ -16,15 +17,15 @@ public class Checkpoint : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (isActive) return;
-        var player = collider.GetComponent<Player>();
+        var player = other.GetComponent<Player>();
         if (!player) return;
         animator.Play("Active");
         isActive = true;
+        audioSource.Play();
         spawnLocationEvent.Invoke(transform.position);
-        Debug.Log(transform.position);
     }
 
 
