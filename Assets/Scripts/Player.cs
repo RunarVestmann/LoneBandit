@@ -226,6 +226,12 @@ public class Player : MonoBehaviour
         return 0;
     }
 
+    public void ForceIdle()
+    {
+        SetAnimationState(IDLE);
+        body.velocity = Vector2.zero;
+    }
+
     IEnumerator Dash(Vector2 direction)
     {
         var dashEffect = (GameObject) Instantiate(dashParticles, transform.position, Quaternion.identity);
