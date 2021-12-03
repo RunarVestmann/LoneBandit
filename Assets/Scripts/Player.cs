@@ -299,11 +299,11 @@ public class Player : MonoBehaviour
 
     void OnDeath()
     {
+        deathEvent.Invoke();
         body.gravityScale = 0;
         body.velocity = Vector2.zero;
         isDead = true;
         SetAnimationState(DEATH);
-        deathEvent.Invoke();
     }
 
     public void OnRespawn()
