@@ -36,7 +36,8 @@ public class Player : MonoBehaviour
     [Space] [Header("Colliders")] [SerializeField]
     Collider2D belowCollider;
 
-    [SerializeField] Collider2D frontCollider;
+    [SerializeField] Collider2D leftCollider;
+    [SerializeField] Collider2D rightCollider;
 
     [Space] [Header("Layers")] [SerializeField]
     LayerMask groundLayer;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
     [SerializeField] LayerMask wallLayer;
 
     BetterJump betterJump;
-
+    SpriteRenderer spriteRenderer;
     Rigidbody2D body;
     Vector2 moveDirection;
 
@@ -95,6 +96,7 @@ public class Player : MonoBehaviour
         RESPAWN = Animator.StringToHash("Respawn");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -122,7 +124,9 @@ public class Player : MonoBehaviour
         else
             body.velocity = new Vector2(direction.x * movementSpeed, body.velocity.y);
 
-        if (IsWallInFront() && Mathf.Abs(direction.x) > 0f && !IsGrounded())
+        var wallInFront = (facingRight && IsWallToRight()) || (!facingRight && IsWallToLeft());
+        
+        if (wallInFront && Mathf.Abs(direction.x) > 0f && !IsGrounded())
         {
             var particleDir = direction.x * 0.2f;
             var position = body.transform.position;
@@ -170,15 +174,21 @@ public class Player : MonoBehaviour
             var jumpEffect = (GameObject) Instantiate(jumpingParticles, transform.position, Quaternion.identity);
             Destroy(jumpEffect, 0.5f);
         }
-        else if (IsWallInFront())
+        else if (IsWallToRight() || IsWallToLeft())
         {
             jumpEvent.Invoke();
             var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
             body.AddForce(Vector2.up * verticalWallJumpForce, ForceMode2D.Impulse);
-            body.AddForce(-transform.localScale * horizontalWallJumpForce, ForceMode2D.Impulse);
-            FlipScale();
+            var horizontalDirection = IsWallToRight() ? Vector2.left : Vector2.right;
+            body.AddForce(horizontalDirection * horizontalWallJumpForce, ForceMode2D.Impulse);
+            
+            if (horizontalDirection == Vector2.left && facingRight)
+                FlipSprite();
+            else if (horizontalDirection == Vector2.right && !facingRight)
+                FlipSprite();
+            
             var position = transform.position;
             var jumpEffect = (GameObject) Instantiate(jumpingParticles,
                 new Vector3(position.x + particleDirection, position.y, position.z), Quaternion.identity);
@@ -257,17 +267,15 @@ public class Player : MonoBehaviour
         Destroy(trailEffect, dashTime);
     }
 
-    void FlipScale()
+    void FlipSprite()
     {
-        var localScale = transform.localScale;
-        localScale.x = -localScale.x;
         facingRight = !facingRight;
-        transform.localScale = localScale;
+        spriteRenderer.flipX = !facingRight;
     }
 
     bool IsGrounded() => belowCollider.IsTouchingLayers(groundLayer);
-
-    bool IsWallInFront() => frontCollider.IsTouchingLayers(wallLayer);
+    bool IsWallToLeft() => leftCollider.IsTouchingLayers(wallLayer);
+    bool IsWallToRight() => rightCollider.IsTouchingLayers(wallLayer);
 
     void ApplyAnimations()
     {
@@ -282,18 +290,15 @@ public class Player : MonoBehaviour
     void ApplySpriteRotation()
     {
         if (isWallJumping) return;
-        var localScale = transform.localScale;
         if (moveDirection.x < 0f && facingRight)
         {
-            localScale.x = -1f;
             facingRight = false;
-            transform.localScale = localScale;
+            spriteRenderer.flipX = !facingRight;
         }
         else if (moveDirection.x > 0f && !facingRight)
         {
-            localScale.x = 1f;
             facingRight = true;
-            transform.localScale = localScale;
+            spriteRenderer.flipX = !facingRight;
         }
     }
 

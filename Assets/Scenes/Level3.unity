@@ -5743,11 +5743,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158600, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: fallMultiplier
-      value: 0.45
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: jumpForce
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: wallJumpTime
       value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: airborneJumpForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
+      propertyPath: verticalWallJumpForce
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6094150044013158601, guid: 42913741d6236114c803d48287bd5d06, type: 3}
       propertyPath: horizontalWallJumpForce
@@ -86631,7 +86643,7 @@ MonoBehaviour:
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
-  m_BiasY: 0
+  m_BiasY: -0.000000037252903
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 0
