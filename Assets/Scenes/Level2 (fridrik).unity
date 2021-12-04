@@ -11169,6 +11169,10 @@ PrefabInstance:
       propertyPath: globalLight
       value: 
       objectReference: {fileID: 4883195197938977092}
+    - target: {fileID: 8889451947878947982, guid: cf0717151092df2419bd98a10c02d56b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0717151092df2419bd98a10c02d56b, type: 3}
 --- !u!224 &2000741128 stripped

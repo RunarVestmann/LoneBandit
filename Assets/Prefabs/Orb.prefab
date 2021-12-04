@@ -204,7 +204,7 @@ MonoBehaviour:
   orbCollider: {fileID: 4371133792887908591}
   spriteRenderer: {fileID: 2344088031231268769}
   animator: {fileID: 2344088031582883086}
-  timeUntilPlayerCanCollectAgain: 3
+  timeUntilPlayerCanCollectAgain: 2.5
   fadeInTime: 1
   onCollect:
     m_PersistentCalls:
