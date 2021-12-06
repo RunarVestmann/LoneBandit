@@ -80,6 +80,11 @@ public class Player : MonoBehaviour
     int DEATH;
     int RESPAWN;
 
+    //After dash
+    int REDFALL;
+    int REDJUMP;
+    int REDWALLSLIDE;
+
     float defaultGravityScale;
 
     void Awake()
@@ -94,6 +99,9 @@ public class Player : MonoBehaviour
         WALLSLIDE = Animator.StringToHash("WallSlide");
         DEATH = Animator.StringToHash("Death");
         RESPAWN = Animator.StringToHash("Respawn");
+        REDJUMP = Animator.StringToHash("RedJump");
+        REDFALL = Animator.StringToHash("RedFall");
+        REDWALLSLIDE = Animator.StringToHash("RedWallSlide");
         currentAnimationState = IDLE;
         defaultGravityScale = body.gravityScale;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -134,7 +142,10 @@ public class Player : MonoBehaviour
                 new Vector3(position.x + particleDir, position.y, position.z), Quaternion.identity);
             Destroy(wallSlidingParticle, 0.3f);
             isWallSliding = true;
-            SetAnimationState(WALLSLIDE);
+            if (!hasDashed)
+                SetAnimationState(WALLSLIDE);
+            else
+                SetAnimationState(REDWALLSLIDE);
             var velocity = body.velocity;
             body.velocity = new Vector2(velocity.x, Mathf.Max(velocity.y, wallSlideVerticalVelocity));
         }
@@ -280,11 +291,13 @@ public class Player : MonoBehaviour
     void ApplyAnimations()
     {
         if (isWallSliding || isDead) return;
-
-        if (IsGrounded())
-            SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
+        if (!hasDashed)
+            if (IsGrounded())
+                SetAnimationState(moveDirection.x == 0f ? IDLE : RUN);
+            else
+                SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
         else
-            SetAnimationState(body.velocity.y > 0f ? JUMP : FALL);
+            SetAnimationState(body.velocity.y > 0f ? REDJUMP : REDFALL);
     }
 
     void ApplySpriteRotation()
