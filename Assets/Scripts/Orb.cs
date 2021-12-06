@@ -12,8 +12,15 @@ public class Orb : MonoBehaviour
     [SerializeField] float fadeInTime;
     [SerializeField] UnityEvent onCollect;
 
+    ParticleSystemRenderer particles;
+
     // Start playing the hover animation at a random offset so orbs don't hover at the exact same rate
     void Start() => animator.PlayInFixedTime("Hover", 0, Random.Range(0f, 0.3f));
+
+    void Awake()
+    {
+        particles = GetComponentInChildren<ParticleSystemRenderer>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,10 +33,12 @@ public class Orb : MonoBehaviour
     IEnumerator CollectRoutine()
     {
         onCollect.Invoke();
+        particles.enabled = false;
         orbCollider.enabled = false;
         animator.Play("Collect");
         yield return new WaitForSeconds(timeUntilPlayerCanCollectAgain);
         orbCollider.enabled = true;
+        particles.enabled = true;
         yield return FadeInRoutine();
     }
 
