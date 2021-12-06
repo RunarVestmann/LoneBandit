@@ -44447,6 +44447,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8101288424797981608, guid: 8e2d5345b5c42a74e937dcd648cfdbc7, type: 3}
   m_PrefabInstance: {fileID: 98410508}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1069906110 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+  m_PrefabInstance: {fileID: 1478538686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1076550271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8101288424797981608, guid: 8e2d5345b5c42a74e937dcd648cfdbc7, type: 3}
@@ -48730,6 +48735,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
   m_PrefabInstance: {fileID: 535080670}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1478538686
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1952038011}
+    m_Modifications:
+    - target: {fileID: 2344088031053221800, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_Name
+      value: orb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.41026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344088031053221801, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b610626ce284524ca7351b36b2309ee, type: 3}
 --- !u!4 &1480575851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8101288424797981608, guid: 8e2d5345b5c42a74e937dcd648cfdbc7, type: 3}
@@ -53368,6 +53430,7 @@ Transform:
   - {fileID: 1495126602}
   - {fileID: 1473718930}
   - {fileID: 1734794712}
+  - {fileID: 1069906110}
   m_Father: {fileID: 1431475664}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -86562,7 +86625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4883195199547337330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6210823, y: -11.144797, z: -10}
+  m_LocalPosition: {x: -6.625242, y: -11.1447935, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4883195199622353916}

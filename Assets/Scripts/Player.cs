@@ -221,7 +221,7 @@ public class Player : MonoBehaviour
 
         // Dash in the direction we are facing if there is no input
         if (dashDirection == Vector2.zero)
-            dashDirection = transform.localScale.x * Vector2.right;
+            dashDirection = facingRight ? Vector2.right : Vector2.left;
         else
         {
             // Clamping the directional input to be a multiple of 45 degrees
@@ -258,6 +258,9 @@ public class Player : MonoBehaviour
         var dashEffect = (GameObject) Instantiate(dashParticles, transform.position, Quaternion.identity);
         var trailEffect = Instantiate(dashTrail, transform.position, Quaternion.identity);
         trailEffect.transform.SetParent(body.transform); //setting the trail as the child of the player 
+        var localScale = trailEffect.transform.localScale;
+        localScale.x = facingRight ? 1f : -1f;
+        trailEffect.transform.localScale = localScale;
 
         betterJump.enabled = false;
         isDashing = true;
