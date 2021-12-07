@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 {
     [Header("Events")] [SerializeField] UnityEvent dashEvent;
     [SerializeField] UnityEvent jumpEvent;
+    [SerializeField] UnityEvent walljumpEvent;
     [SerializeField] UnityEvent landEvent;
     [SerializeField] UnityEvent deathEvent;
     [SerializeField] UnityEvent coinEvent;
@@ -187,7 +188,7 @@ public class Player : MonoBehaviour
         }
         else if (IsWallToRight() || IsWallToLeft())
         {
-            jumpEvent.Invoke();
+            walljumpEvent.Invoke();
             var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;

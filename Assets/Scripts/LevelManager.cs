@@ -21,8 +21,6 @@ public class LevelManager : MonoBehaviour
     float elapsedTime = 0f;
     float elapsedTimeSinceLevelComplete;
     bool levelComplete;
-    
-    int highScore = 0;
 
     void Update()
     {
