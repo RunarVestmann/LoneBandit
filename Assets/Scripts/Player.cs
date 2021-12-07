@@ -212,6 +212,8 @@ public class Player : MonoBehaviour
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * airborneJumpForce, ForceMode2D.Impulse);
+            var jumpEffect = (GameObject)Instantiate(jumpingParticles, transform.position, Quaternion.identity);
+            Destroy(jumpEffect, 0.5f);
         }
     }
 

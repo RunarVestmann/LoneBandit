@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054479a044e5a984d91e4f3f186e0d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeTime: 0.6
+  shakeTime: 1
   parent: {fileID: 6866842194942625672}
   resetTime: 3
 --- !u!95 &6866842194787375450
