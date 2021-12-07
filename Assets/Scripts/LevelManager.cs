@@ -17,19 +17,21 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] float timeUntilYouCanChangeLevels = 1.3f;
     bool loadingLevel;
+    CoinUI coinUI;
+    int totalScore;
     
     float elapsedTime = 0f;
     float elapsedTimeSinceLevelComplete;
     bool levelComplete;
-    
-    int highScore = 0;
+
+    void Awake()
+    {
+        coinUI = FindObjectOfType<CoinUI>();
+        totalScore = FindObjectsOfType<Coin>().Length;
+    }
 
     void Update()
     {
-        //sets the local high score for this instance of the game 
-        //if (score > highScore)
-        //    highScore = score;
-
         if (levelComplete)
         {
             elapsedTimeSinceLevelComplete += Time.deltaTime;
@@ -50,6 +52,7 @@ public class LevelManager : MonoBehaviour
         deathUI.text = $"Deaths: {deaths}";
         player.ForceIdle();
         player.enabled = false;
+        coinUI.SetText($"{score}/{totalScore}");
     }
 
     public void OnJumpInput()

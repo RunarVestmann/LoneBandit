@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CollapsibleStone : MonoBehaviour
@@ -9,7 +7,6 @@ public class CollapsibleStone : MonoBehaviour
     [SerializeField] float resetTime = 3f;
 
     bool isActive;
-
     float elapsedTime = 0f;
 
     Animator animator;
@@ -19,14 +16,12 @@ public class CollapsibleStone : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         originalPosition = transform.position;
-
-
     }
 
     void FixedUpdate()
     {
-        if (isActive)
-        {
+        if (!isActive) return;
+        
             if (elapsedTime > shakeTime)
             {
                 elapsedTime = 0f;
@@ -34,14 +29,10 @@ public class CollapsibleStone : MonoBehaviour
                 animator.enabled = false;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 parent.GetComponent<BoxCollider2D>().enabled = false;
-                Invoke("Reset", resetTime);
+                Invoke(nameof(Reset), resetTime);
             }
             else
-            {
-                elapsedTime += 0.01f;
-                Debug.Log(elapsedTime);
-            }
-        }
+                elapsedTime += Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)

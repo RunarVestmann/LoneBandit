@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 36ac3895dc29bf64cb6af6e06cb7d2b8
   - enabled: 1
-    path: Assets/Scenes/Alpha Levels/Level1.unity
-    guid: e3db82ac1d7feaa4bb2f142b785a167c
+    path: Assets/Scenes/Tutorials/Tutorial1.unity
+    guid: b876b680e4b4bb645aea6cd235f58299
   - enabled: 1
-    path: Assets/Scenes/Alpha Levels/Level2.unity
-    guid: 32c88cc46fb0b8a40ad3fc057ddbfb19
+    path: Assets/Scenes/Tutorials/Tutorial2.unity
+    guid: 90eb70f875e110d4da0e830df43feecd
+  - enabled: 1
+    path: Assets/Scenes/Level2 (fridrik).unity
+    guid: 5839e1e611cfcaf4285cb83250530578
   - enabled: 1
     path: Assets/Scenes/Alpha Levels/Level3.unity
     guid: f18319061287f8d4b886a1a67a5a4330

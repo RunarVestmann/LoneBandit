@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 {
     [Header("Events")] [SerializeField] UnityEvent dashEvent;
     [SerializeField] UnityEvent jumpEvent;
+    [SerializeField] UnityEvent walljumpEvent;
     [SerializeField] UnityEvent landEvent;
     [SerializeField] UnityEvent deathEvent;
     [SerializeField] UnityEvent coinEvent;
@@ -187,7 +188,7 @@ public class Player : MonoBehaviour
         }
         else if (IsWallToRight() || IsWallToLeft())
         {
-            jumpEvent.Invoke();
+            walljumpEvent.Invoke();
             var particleDirection = direction.x * 0.2f;
             isWallJumping = true;
             body.velocity = Vector2.zero;
@@ -211,6 +212,8 @@ public class Player : MonoBehaviour
             hasJumped = true;
             body.velocity = new Vector2(body.velocity.x, 0f);
             body.AddForce(Vector2.up * airborneJumpForce, ForceMode2D.Impulse);
+            var jumpEffect = (GameObject)Instantiate(jumpingParticles, transform.position, Quaternion.identity);
+            Destroy(jumpEffect, 0.5f);
         }
     }
 
