@@ -16,4 +16,6 @@ public class CoinUI : MonoBehaviour
         coinsCollected++;
         coinUI.text = coinsCollected.ToString();
     }
+
+    public void SetText(string text) => coinUI.text = text;
 }
