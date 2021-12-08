@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     bool loadingLevel;
     CoinUI coinUI;
     int totalScore;
-    
+
     float elapsedTime = 0f;
     float elapsedTimeSinceLevelComplete;
     bool levelComplete;
@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
     {
         coinUI = FindObjectOfType<CoinUI>();
         totalScore = FindObjectsOfType<Coin>().Length;
+        if (PlayerPrefs.HasKey("mainVolume"))
+            AudioListener.volume = PlayerPrefs.GetFloat("mainVolume");
     }
 
     void Update()
@@ -37,9 +39,10 @@ public class LevelManager : MonoBehaviour
             elapsedTimeSinceLevelComplete += Time.deltaTime;
             return;
         }
-        
+
         var timespan = TimeSpan.FromSeconds(elapsedTime);
-        timer.text = $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
+        timer.text =
+            $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
         elapsedTime += Time.deltaTime;
     }
 
