@@ -30,6 +30,29 @@ public class LevelManager : MonoBehaviour
         coinUI = FindObjectOfType<CoinUI>();
         if (insideLevel)
             totalScore = FindObjectsOfType<Coin>().Length;
+        else
+        {
+            var sceneCount = SceneManager.sceneCountInBuildSettings;
+            var totalTime = 0f;
+            for (var i = 1; i < sceneCount - 1; i++)
+            {
+                if (PlayerPrefs.HasKey($"Level{i}score")) score += PlayerPrefs.GetInt($"Level{i}score");
+                if (PlayerPrefs.HasKey($"Level{i}deaths")) deaths += PlayerPrefs.GetInt($"Level{i}deaths");
+                if (PlayerPrefs.HasKey($"Level{i}dashes")) dashes += PlayerPrefs.GetInt($"Level{i}dashes");
+                if (PlayerPrefs.HasKey($"Level{i}jumps")) jumps += PlayerPrefs.GetInt($"Level{i}jumps");
+                if (PlayerPrefs.HasKey($"Level{i}time")) totalTime += PlayerPrefs.GetFloat($"Level{i}time");
+            }
+
+            var timespan = TimeSpan.FromSeconds(totalTime);
+            timer.text =
+                $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
+            
+            // TODO: maybe just hardcode the number of coins in the entire game (this is wrong)
+            totalScore = 24;
+            
+            UpdateUI();
+        }
+
         if (PlayerPrefs.HasKey("mainVolume"))
             AudioListener.volume = PlayerPrefs.GetFloat("mainVolume");
     }
@@ -42,7 +65,7 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
-        if (!timer) return;
+        if (!timer || !insideLevel) return;
 
         var timespan = TimeSpan.FromSeconds(elapsedTime);
         timer.text =
@@ -52,10 +75,28 @@ public class LevelManager : MonoBehaviour
 
     public void OnLevelComplete()
     {
+        if (insideLevel)
+        {
+            var sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt($"Level{sceneIndex}score", score);
+            PlayerPrefs.SetInt($"Level{sceneIndex}jumps", jumps);
+            PlayerPrefs.SetInt($"Level{sceneIndex}dashes", dashes);
+            PlayerPrefs.SetInt($"Level{sceneIndex}deaths", deaths);
+            PlayerPrefs.SetFloat($"Level{sceneIndex}time", elapsedTime);
+        }
+
         levelComplete = true;
         if (levelCompletionUI)
             levelCompletionUI.SetActive(true);
         
+        UpdateUI();
+        
+        player.ForceIdle();
+        player.enabled = false;
+    }
+
+    void UpdateUI()
+    {
         if (jumpUI)
             jumpUI.text = $"Jumps: {jumps}";
 
@@ -64,10 +105,7 @@ public class LevelManager : MonoBehaviour
 
         if (deathUI)
             deathUI.text = $"Deaths: {deaths}";
-
-        player.ForceIdle();
-        player.enabled = false;
-        
+ 
         if (coinUI)
             coinUI.SetText($"{score}/{totalScore}");
     }
