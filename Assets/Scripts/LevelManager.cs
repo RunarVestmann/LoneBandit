@@ -16,9 +16,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI deathUI;
     [SerializeField] Player player;
     [SerializeField] float timeUntilYouCanChangeLevels = 1.3f;
+    [SerializeField] bool insideLevel = true;
+    [SerializeField] int totalScore;
     bool loadingLevel;
     CoinUI coinUI;
-    int totalScore;
 
     float elapsedTime = 0f;
     float elapsedTimeSinceLevelComplete;
@@ -27,7 +28,8 @@ public class LevelManager : MonoBehaviour
     void Awake()
     {
         coinUI = FindObjectOfType<CoinUI>();
-        totalScore = FindObjectsOfType<Coin>().Length;
+        if (insideLevel)
+            totalScore = FindObjectsOfType<Coin>().Length;
         if (PlayerPrefs.HasKey("mainVolume"))
             AudioListener.volume = PlayerPrefs.GetFloat("mainVolume");
     }
@@ -40,6 +42,8 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
+        if (!timer) return;
+
         var timespan = TimeSpan.FromSeconds(elapsedTime);
         timer.text =
             $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
@@ -49,13 +53,23 @@ public class LevelManager : MonoBehaviour
     public void OnLevelComplete()
     {
         levelComplete = true;
-        levelCompletionUI.SetActive(true);
-        jumpUI.text = $"Jumps: {jumps}";
-        dashUI.text = $"Dashes: {dashes}";
-        deathUI.text = $"Deaths: {deaths}";
+        if (levelCompletionUI)
+            levelCompletionUI.SetActive(true);
+        
+        if (jumpUI)
+            jumpUI.text = $"Jumps: {jumps}";
+
+        if (dashUI)
+            dashUI.text = $"Dashes: {dashes}";
+
+        if (deathUI)
+            deathUI.text = $"Deaths: {deaths}";
+
         player.ForceIdle();
         player.enabled = false;
-        coinUI.SetText($"{score}/{totalScore}");
+        
+        if (coinUI)
+            coinUI.SetText($"{score}/{totalScore}");
     }
 
     public void OnJumpInput()
