@@ -43777,6 +43777,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 5828020462349606431, guid: c129b2d25cbac6b4f9b947e97099b7c3, type: 3}
+      propertyPath: m_Size.y
+      value: 6.3410625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828020462349606431, guid: c129b2d25cbac6b4f9b947e97099b7c3, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.1739082
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c129b2d25cbac6b4f9b947e97099b7c3, type: 3}
 --- !u!1 &697558196
