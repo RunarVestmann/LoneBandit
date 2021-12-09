@@ -274,14 +274,15 @@ public class Player : MonoBehaviour
         
         yield return new WaitForSeconds(dashTime);
 
+
         isDashing = false;
 
         body.velocity = Vector2.zero;
-
-        body.gravityScale = defaultGravityScale;
         betterJump.enabled = true;
         Destroy(dashEffect, 0.5f);
         Destroy(trailEffect, dashTime);
+        if (isDead) yield break;
+        body.gravityScale = defaultGravityScale;
     }
 
     void FlipSprite()
