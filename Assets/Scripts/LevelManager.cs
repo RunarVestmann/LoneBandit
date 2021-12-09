@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
@@ -18,6 +20,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float timeUntilYouCanChangeLevels = 1.3f;
     [SerializeField] bool insideLevel = true;
     [SerializeField] int totalScore;
+    [SerializeField] UnityEvent LevelCompletedEvent;
     bool loadingLevel;
     CoinUI coinUI;
 
@@ -27,6 +30,9 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
+        if (PlayerPrefs.HasKey("mainVolume"))
+            AudioListener.volume = PlayerPrefs.GetFloat("mainVolume");
+        
         coinUI = FindObjectOfType<CoinUI>();
         if (insideLevel)
             totalScore = FindObjectsOfType<Coin>().Length;
@@ -34,27 +40,21 @@ public class LevelManager : MonoBehaviour
         {
             var sceneCount = SceneManager.sceneCountInBuildSettings;
             var totalTime = 0f;
-            for (var i = 1; i < sceneCount - 1; i++)
+            for (var i = 0; i < sceneCount; i++)
             {
                 if (PlayerPrefs.HasKey($"Level{i}score")) score += PlayerPrefs.GetInt($"Level{i}score");
                 if (PlayerPrefs.HasKey($"Level{i}deaths")) deaths += PlayerPrefs.GetInt($"Level{i}deaths");
                 if (PlayerPrefs.HasKey($"Level{i}dashes")) dashes += PlayerPrefs.GetInt($"Level{i}dashes");
                 if (PlayerPrefs.HasKey($"Level{i}jumps")) jumps += PlayerPrefs.GetInt($"Level{i}jumps");
+                if (PlayerPrefs.HasKey($"Level{i}totalScore")) totalScore += PlayerPrefs.GetInt($"Level{i}totalScore");
                 if (PlayerPrefs.HasKey($"Level{i}time")) totalTime += PlayerPrefs.GetFloat($"Level{i}time");
             }
 
             var timespan = TimeSpan.FromSeconds(totalTime);
             timer.text =
                 $"{timespan.Minutes.ToString()} : {timespan.Seconds.ToString()}.{timespan.Milliseconds.ToString()}";
-            
-            // TODO: maybe just hardcode the number of coins in the entire game (this is wrong)
-            totalScore = 24;
-            
             UpdateUI();
         }
-
-        if (PlayerPrefs.HasKey("mainVolume"))
-            AudioListener.volume = PlayerPrefs.GetFloat("mainVolume");
     }
 
     void Update()
@@ -75,6 +75,7 @@ public class LevelManager : MonoBehaviour
 
     public void OnLevelComplete()
     {
+        LevelCompletedEvent.Invoke();
         if (insideLevel)
         {
             var sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -83,6 +84,7 @@ public class LevelManager : MonoBehaviour
             PlayerPrefs.SetInt($"Level{sceneIndex}dashes", dashes);
             PlayerPrefs.SetInt($"Level{sceneIndex}deaths", deaths);
             PlayerPrefs.SetFloat($"Level{sceneIndex}time", elapsedTime);
+            PlayerPrefs.SetInt($"Level{sceneIndex}totalScore", totalScore);
         }
 
         levelComplete = true;
