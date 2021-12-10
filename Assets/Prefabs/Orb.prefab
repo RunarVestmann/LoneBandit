@@ -4910,7 +4910,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -9901,7 +9901,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0036448836, y: -0.0054531395}
+  m_Offset: {x: -0.0016415119, y: 0.0011043549}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9912,7 +9912,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37935853, y: 0.37977618}
+  m_Size: {x: 0.5219493, y: 0.5327835}
   m_EdgeRadius: 0
 --- !u!114 &556368776901067991
 MonoBehaviour:
