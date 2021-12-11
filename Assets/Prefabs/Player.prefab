@@ -10753,6 +10753,7 @@ GameObject:
   - component: {fileID: 6094150044013158601}
   - component: {fileID: 6094150044013158600}
   - component: {fileID: 1162654158}
+  - component: {fileID: 1999396447}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11058,6 +11059,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  jumpReplenishEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 327664173}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 205289678}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   movementSpeed: 5
   jumpForce: 12
   airborneJumpForce: 12
@@ -11124,3 +11152,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1999396447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094150044013158643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.25151157, y: -0.49995518, z: 0}
+  - {x: -0.1826458, y: -0.4951229, z: 0}
+  - {x: -0.1826458, y: -0.43889236, z: 0}
+  - {x: -0.12866211, y: -0.43663502, z: 0}
+  - {x: -0.11516857, y: -0.37816334, z: 0}
+  - {x: -0.054437637, y: -0.31517696, z: 0}
+  - {x: 0.060272217, y: -0.32192516, z: 0}
+  - {x: 0.062521935, y: -0.48611832, z: 0}
+  - {x: 0.12651825, y: -0.4977064, z: 0}
+  - {x: 0.13449478, y: -0.44114208, z: 0}
+  - {x: 0.18622684, y: -0.4366436, z: 0}
+  - {x: 0.19747257, y: -0.26120377, z: 0}
+  - {x: 0.25370312, y: -0.2364626, z: 0}
+  - {x: 0.26270008, y: 0.1886406, z: 0}
+  - {x: 0.31668186, y: 0.19088936, z: 0}
+  - {x: 0.32118034, y: 0.3168459, z: 0}
+  - {x: 0.25595284, y: 0.3168459, z: 0}
+  - {x: 0.19399452, y: 0.37884712, z: 0}
+  - {x: 0.18172836, y: 0.43380547, z: 0}
+  - {x: -0.061187744, y: 0.43605518, z: 0}
+  - {x: -0.21102524, y: 0.32036686, z: 0}
+  - {x: -0.3198452, y: 0.25162697, z: 0}
+  - {x: -0.31534767, y: 0.12567043, z: 0}
+  - {x: -0.3693285, y: 0.11892223, z: 0}
+  - {x: -0.3693285, y: -0.121744156, z: 0}
+  - {x: -0.3693285, y: -0.31517696, z: 0}
+  - {x: -0.31534767, y: -0.31967545, z: 0}
+  - {x: -0.31309795, y: -0.375906, z: 0}
+  - {x: -0.25461864, y: -0.38715267, z: 0}
+  m_ShapePathHash: 430405775
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 37760
