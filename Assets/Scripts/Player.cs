@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] UnityEvent landEvent;
     [SerializeField] UnityEvent deathEvent;
     [SerializeField] UnityEvent coinEvent;
+    [SerializeField] UnityEvent jumpReplenishEvent;
 
     [Space] [Header("Movement")] [SerializeField]
     float movementSpeed;
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour
     bool hasDashed;
     bool hasJumped;
     bool groundStatusLastFrame = true;
+    bool hasJumpedStatusLastFrame;
     bool isDead;
 
     int currentAnimationState;
@@ -164,7 +166,11 @@ public class Player : MonoBehaviour
             landEvent.Invoke();
         }
 
+        if (hasJumpedStatusLastFrame && !hasJumped)
+            jumpReplenishEvent.Invoke();
+
         groundStatusLastFrame = IsGrounded();
+        hasJumpedStatusLastFrame = hasJumped;
     }
 
     public void OnMovement(InputAction.CallbackContext context) => moveDirection = context.ReadValue<Vector2>();
